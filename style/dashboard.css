@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+body{
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    /* border: 2px solid red; */
+    background-color: #d1d1d0;
+    box-shadow: inset 0 0 7px #000000;
+    border-radius: 15px;
+    padding: 20px 0px;
+    justify-content: space-around;
+    position: relative;
+    top: 100px;
+    padding: 30px 0px;
+}
+
+.card {
+    background-color: #d1d1d0;
+    height: 450px;
+    box-shadow: 0px 0px 10px 5px #888888;
+    border-radius: 8px;
+}
+
+/* card-1 design................ */
+
+
+.card-1 .profile{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+
+.card-1 .profile img{
+    border: 2px solid rgb(14, 15, 14);
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 25%;
+}
+
+.card-1 .profile h3{
+    color:#041935;
+    margin: 2px 0px;
+}
+
+.card-1 .profile h5{
+    color:#041935;
+    margin-bottom: 10px;
+}
+
+.card-1 .links ul {
+    position: relative;
+    top: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-1 .links ul li{
+    margin: 8px 0px;
+    
+}
+.card-1 .links ul li a{
+    text-decoration: none;
+    font-weight: 600;
+    color: brown;
+
+}
+
+
+/* card-2 design............ */
+
+
+.card-2 {
+    /* border: 2px solid yellow; */
+    width: 50%;
+}
+.wlcm{
+    margin-left: 15px;
+}
+.card-2 h1{
+    color: #041935;
+
+}
+
+.card-2 h3{
+    color: #041935;
+    margin: 3px 0px;
+    font-weight: 500;
+
+}
+
+.card-2 .activites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    top: 30px;
+
+}
+
+.card-2 .activity {
+    height: 150px;
+    width: 90%;
+    margin: 5px 0px;
+    border-radius: 10px;
+    background: rgb(105, 211, 179);
+}
+
+/* .card-3 design................ */
+
+.card-3 {
+    /* border: 2px solid firebrick; */
+    list-style: none;
+    width: 20%;
+    border-left:2px  solid #041935;
+
+}
+.card-3 h2{
+    color: #041935;
+    margin: 20px 0px;
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.card-3 .history-activity ul{
+    list-style: number;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card-3 .history-activity ul li{
+    margin: 4px 0;
+
+}
+.history-activity ul li a{
+    text-decoration: none;
+    font-size: 15px;
+}
