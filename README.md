@@ -23,16 +23,6 @@ When raising an issue, do make sure to mention the kind of feature, feature titl
 
 If you want to work on this unique project and share it with the world, you can do that here. Go through the contributing guidelines here.
 
-## Pre-requisites :rotating_light:
-
-
-- **Javascript** 
-    
-
-- **Html** 
-    
-    
-- **CSS** 
     
 ## Contributing :handshake:
 
