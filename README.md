@@ -1,11 +1,13 @@
 ## **Welcome to Formfil.in** 👋
-This site is make for any type of cafe service.    
+This site is specifically designed for cyber cafes to manage their operations and provide services to their customers. Whether you're running a small internet cafe or a large gaming center, this site has everything you need to streamline your business and offer an exceptional experience to your customers. With features such as Online Form Filling, Samaj kalyan vibhag work like create adhar,PAN card, voter ID card and many more services helps you efficiently manage your cyber cafe, freeing up time and resources to focus on growing your business. 
+
+So, if you're looking for a complete solution for your cyber cafe, this site is the right choice for you. 
     
   
 ## 📌Repository
 
 FormFill is a website that is help the people to save there time for going and cyber caife for complete there work.
-this a new concept for everyone.
+This will be very helpful for villagers and for those who is so far from the city or town area.
 
 ## ✔Feature
 - User-Friendly process (fill any form, content writing, poster designing, website development, app development and many more...).
@@ -15,7 +17,7 @@ this a new concept for everyone.
 
 
 ## 🔑Tech Stacks
-Skills : Python, HTML, CSS, JS, Bootstrap, Android
+Skills : Python, HTML, CSS, JS, Java, Bootstrap, Android, Django
 
 When raising an issue, do make sure to mention the kind of feature, feature title, short description of the feature and how would you expect it to work. As a good practice, always link the issue number with pull request. (#issue number : Give this details when you raise a PR).
 
