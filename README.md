@@ -72,7 +72,7 @@ git commit -m "<your_commit_message>"
 git push 
 ```
 
-**8.** Create a [PR](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) to `develop` !) repository.
+**8.** Create a [PR](https://codervivek5.github.io/Formfil.in/) to `develop` !) repository.
 
 
 
