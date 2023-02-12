@@ -87,7 +87,7 @@ https://codervivek5.github.io/Formfil.in/
 ## 📬 Contact:
 If you want to contact me, you can reach me through below handles.
 
-[![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com)
+[![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com/codervivek5/)
  
 © 2022 Coder Vivek
 
