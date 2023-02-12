@@ -43,7 +43,7 @@ git clone https://github.com/codervivek5/Formfil.in.git
 **3.** Navigate to the project directory.
 
 ```bash
-cd Formfil.in/
+cd Formfil.in
 ```
 
 
