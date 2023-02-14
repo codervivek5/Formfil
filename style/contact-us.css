@@ -23,8 +23,9 @@ body {
   position: absolute;
   height: 16%;
   width: 99%;
-  /* background-color: rgba(143, 135, 132, 0.274); */
 }
+  /* background-color: rgba(143, 135, 132, 0.274); */
+
 
 .main .navbar .logo {
   position: relative;
@@ -133,7 +134,7 @@ body {
 }
 
 .dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+  background-color:rgb(89, 174, 89);
 }
 
 
@@ -162,14 +163,15 @@ body {
 input[type=text], select, textarea {
   width: 100%;
   padding: 12px;
-  border: 1px solid #ccc;
+  border: 3px solid rgb(91, 91, 240);
+  border-radius: 5px;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
 }
 
 input[type=submit] {
-  background-color: #026e47;
+  background-color:blueviolet;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -178,14 +180,14 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #4ce4b1;
+  background-color: #b31d89;
   
 }
 
 
 .hh {
 
-  margin-top: 6%;
+  margin-top: 5%;
 }
 
 .container {
@@ -238,3 +240,15 @@ input[type=submit]:hover {
 }
 
 /* footer */
+
+/*responsiveness*/
+
+@media(max-width: 1000px){
+  .navbar{
+    visibility: hidden;
+  }
+  .footer {
+    visibility: hidden;
+  }
+
+}
