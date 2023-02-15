@@ -210,6 +210,7 @@ padding: 20px;
 	--color--btn: #2a1958;
 	--color--nav: black;
 	--color--nav_before:#2a1958;
+	
 }
 .dark-mode{
 	--color--main: linear-gradient(#4b075ac4,rgba(28, 1, 41, 0.712)); 
@@ -220,6 +221,7 @@ padding: 20px;
 	--color--btn: #130735;
 	--color--nav: rgb(215, 244, 248);
 	--color--nav_before:rgb(215, 244, 248);
+
 }
   
 
