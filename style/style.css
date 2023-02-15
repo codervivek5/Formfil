@@ -198,7 +198,6 @@ margin-left: 8%;
 	background-color:rgba(0, 0, 0, 0.87);
 }
 /* footer */
-
 .linkss{
 text-align: center;
 	color: white;
@@ -221,6 +220,15 @@ padding: 20px;
 
 	text-align: center;
 	background-color:#530346;
+}
+.adress , .contact , .social , .service{
+    list-style: none;
+}
+
+.fa{
+    color:#9c9c9c;
+    margin-right: 15px;
+    font-size:14px;
 }
 
   
