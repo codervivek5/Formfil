@@ -2,27 +2,52 @@ body{
 	margin:0;
 	padding:0;
 	background:black;
-font-family: 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
 }
 .main{
+    margin: 0;
+    padding: 0;
 	position: relative;
 	height:100vh;
 	width:100%;
-	background:linear-gradient(rgba(244, 245, 243, 0.712),#7b378ec4);
+	background:linear-gradient(rgba(222, 169, 230, 0.712),#7b378ec4);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 0.8;
 	
 }
-.main .navbar{
+.menu{
+    position: fixed;
+  top: 0;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.navbar {
+    padding: 0;
+    height: 30px;
+    /* padding: 5px; */
+    position: fixed;
+}
+
+@media (max-width: 991.5px) {
+    .logo{
+        position: absolute;
+        top: -15px;
+        left: 200px;
+    }
+}
+/* .main .navbar{
 	position: absolute;
 	height:16%;
 	width:99%;
 	/* background-color: rgba(143, 135, 132, 0.274); */
-}
+/* } */ */
 
-.main .navbar .logo{
+/* .main .navbar .logo{
 	position: relative;
 	width: 150px;
     height: 150px;
@@ -86,11 +111,39 @@ font-family: 'Times New Roman', Times, serif;
 	font-size:24px;
 	color:#fff;
 	font-weight:200;
-}
-.img{ margin-left: 63%;
+} */
+
+
+.items {
+    margin: 5px;
+    padding-left: 23px;
+    font-weight: 400;
+    text-align: center ;
+    justify-content: center;
 }
 
-  .dropdown {
+.items .active {
+    margin: 10px;
+    padding-left: 23px;
+    padding-top: 5px ;
+    padding-bottom: 5px;
+    color: purple;
+    background:linear-gradient(rgba(217, 155, 212, 0.712),#b673c9c4);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center ;
+    /* justify-content: center; */
+}
+
+.items .tabs {
+    font-weight: bold;
+}
+
+/* .img{ margin-left: 63%;
+} */
+
+  /* .dropdown {
 	position: relative;
 	display: inline-block;
   }
@@ -116,7 +169,7 @@ font-family: 'Times New Roman', Times, serif;
   .dropdown:hover .dropdown-content {display: block;}
   
   .dropdown:hover .dropbtn {background-color: #3e8e41;}
-
+ */
     /* ____________________________________________________________________________________________________________ */
 
 .container{
