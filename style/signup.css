@@ -1,73 +1,58 @@
-* {
-    box-sizing: border-box;
-
-    margin-top: 20px;
+body{
+    background-color:#7b378ec4;
+    font-family:'Roboto','sans-serif';
 }
-
-input[type=text],
-input[type=password] {
-    width: 100%;
-    padding: 15px;
-    margin: 5px 0 22px 0;
-    display: inline-block;
-    border: none;
-    background: hwb(0 18% 82%);
+.signup-box{
+    width:360px;
+    height:590px;
+    background-color: white;
+    margin:auto;
+    border-radius:10px;
 }
-
-input[type=text]:focus,
-input[type=password]:focus {
-    background-color: #080808;
-    outline: none;
-    color: #f1f1f1;
+h1{
+    text-align:center;
+    margin-top:25px;
+    padding-top: 10px;
 }
-
-hr {
-    border: 1px solid #080808;
-    margin-bottom: 25px;
-    color: #f1f1f1;
+h4{
+    text-align:center;
 }
-
-button {
-    background-color: #1b7d59;
-    color: #f6fefe;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    width: 100%;
-    opacity: 0.99;
+form{
+    width:300px;
+    margin-left:20px;
 }
-
-button:hover {
-    opacity: 1;
-    color: #f1f1f1;
+form label{
+    display:flex;
+    margin-top:15px;
+    font-size:18px;
 }
-
-.cancelbtn {
-    padding: 14px 20px;
-    background-color: #f44336;
+input{
+    width:100%;
+    padding:7px;
+    border:none;
+    border:1px solid grey;
+    border-radius: 5px;
 }
-
-.cancelbtn,
-.signupbtn {
-    float: left;
-    width: 50%;
+input[type="button"]{
+    width:315px;
+    height:35px;
+    margin-top:20px;
+    border:none;
+    background-color: #49c1a2;
+    color:white;
+    font-size: 18px;
 }
-
-.container {
-    padding: 16px;
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
 }
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+.already{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
 }
-
-@media screen and (max-width: 300px) {
-
-    .cancelbtn,
-    .signupbtn {
-        width: 100%;
-    }
+.already a{
+    color: #49c1a2;
 }
