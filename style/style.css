@@ -8,13 +8,19 @@ font-family: 'Times New Roman', Times, serif;
 	position: relative;
 	height:100vh;
 	width:100%;
-	background:linear-gradient(rgba(244, 245, 243, 0.712),#7b378ec4);
+	background:var(--color--main);
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	opacity: 0.8;
 	
 }
+#icon{
+	width: 30px;
+	cursor: pointer;
+	margin: 10px;
+}
+
 .main .navbar{
 	position: absolute;
 	height:16%;
@@ -59,7 +65,7 @@ font-family: 'Times New Roman', Times, serif;
 	display: block;
 	box-sizing: border-box;
 	text-shadow:0px 5px 5px rgba(0, 0, 0, 35%);
-	color:black;
+	color:var(--color--nav); 
 	font-family:'cinzel',sans-serif;
 	font-size:15px;
 	font-weight: 600;
@@ -72,7 +78,7 @@ font-family: 'Times New Roman', Times, serif;
 	content: '';
 	height:2px;
 	width:0;
-	background:#2a1958;
+	background:var(--color--nav_before);
 	left:0;
 	bottom:0;
 	transition: 0.5s ease-in-out width;
@@ -134,11 +140,11 @@ font-family: 'Times New Roman', Times, serif;
     width: 60vh;
 }
 .content h1{
-    color: #2a1958;
+    color:var(--color--h1);
 margin-left: 8%;
 }
 .content h2{
-    color: rgba(0, 0, 0, 0.87);
+    color: var(--color--h2);
     margin-left: 8%;
 }
 .content .para{
@@ -153,8 +159,7 @@ margin-left: 8%;
 
 }
 .content .para{
-    color: black;
-
+    color: var(--color--p);
 }
 .content .button{
     margin: 0px -17px;
@@ -164,7 +169,7 @@ margin-left: 8%;
 
 }
 .content .btn1 {
-    background-color: #2a1958;
+    background-color: var(--color--btn);
     color:honeydew;
   
 }
@@ -173,7 +178,7 @@ margin-left: 8%;
 }
 /* footer */
 .footer{
-background-color:rgb(119, 5, 100);
+background-color:var(--color--footer);
 display: block;
 justify-content: center;
 align-items: center;
@@ -197,8 +202,26 @@ padding: 20px;
 }
 
 
-
-
+:root{
+	--color--main: linear-gradient(rgba(244, 245, 243, 0.712),#7b378ec4); 
+	--color--footer: rgb(119, 5, 100);
+	--color--h1: #2a1958;
+	--color--h2: rgba(122, 60, 60, 0.87);
+	--color--p: black;
+	--color--btn: #2a1958;
+	--color--nav: black;
+	--color--nav_before:#2a1958;
+}
+.dark-mode{
+	--color--main: linear-gradient(#3d0a49c4,rgba(0, 0, 0, 0.712)); 
+	--color--footer: rgb(65, 3, 55);
+	--color--h1: rgb(255, 255, 255);
+	--color--h2: rgb(233, 233, 233);
+	--color--p: white;
+	--color--btn: #130735;
+	--color--nav: rgb(215, 244, 248);
+	--color--nav_before:rgb(215, 244, 248);
+}
   
 
 
