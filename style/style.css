@@ -4,6 +4,28 @@ body{
 	background:black;
 font-family: 'Times New Roman', Times, serif;
 }
+:root{
+	--color--main: linear-gradient(rgba(244, 245, 243, 0.712),#7b378ec4); 
+	--color--footer: rgb(119, 5, 100);
+	--color--h1: #2a1958;
+	--color--h2: rgba(122, 60, 60, 0.87);
+	--color--p: black;
+	--color--btn: #2a1958;
+	--color--nav: black;
+	--color--nav_before:#2a1958;
+	
+}
+.dark-mode{
+	--color--main: linear-gradient(#4b075ac4,rgba(28, 1, 41, 0.712)); 
+	--color--footer: rgb(65, 3, 55);
+	--color--h1: rgb(255, 255, 255);
+	--color--h2: rgb(233, 233, 233);
+	--color--p: white;
+	--color--btn: #130735;
+	--color--nav: rgb(215, 244, 248);
+	--color--nav_before:rgb(215, 244, 248);
+
+}
 .main{
 	position: relative;
 	height:100vh;
@@ -176,21 +198,22 @@ margin-left: 8%;
 	background-color:rgba(0, 0, 0, 0.87);
 }
 /* footer */
-.footer{
-background-color:var(--color--footer);
-display: block;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 40vh;
 
-}
 .linkss{
 text-align: center;
 	color: white;
 	padding: 20px;
 } 
 
+.footer{
+	background-color:var(--color--footer);
+	display: block;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	height: 40vh;
+	
+}
 .copy{
 
 color: white;
@@ -200,29 +223,6 @@ padding: 20px;
 	background-color:#530346;
 }
 
-
-:root{
-	--color--main: linear-gradient(rgba(244, 245, 243, 0.712),#7b378ec4); 
-	--color--footer: rgb(119, 5, 100);
-	--color--h1: #2a1958;
-	--color--h2: rgba(122, 60, 60, 0.87);
-	--color--p: black;
-	--color--btn: #2a1958;
-	--color--nav: black;
-	--color--nav_before:#2a1958;
-	
-}
-.dark-mode{
-	--color--main: linear-gradient(#4b075ac4,rgba(28, 1, 41, 0.712)); 
-	--color--footer: rgb(65, 3, 55);
-	--color--h1: rgb(255, 255, 255);
-	--color--h2: rgb(233, 233, 233);
-	--color--p: white;
-	--color--btn: #130735;
-	--color--nav: rgb(215, 244, 248);
-	--color--nav_before:rgb(215, 244, 248);
-
-}
   
 
 
