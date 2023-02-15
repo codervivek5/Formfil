@@ -1,54 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
 
-<head>
-	<meta charset="UTF-8" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Login</title>
+    <!-- custome css -->
+    <link rel="stylesheet" href="../style/base.css" />
 
-	<!-- custome css -->
-	<link rel="stylesheet" href="../style/base.css" />
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Trirong"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-	<!-- bootstrap css -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <div class="main">
+      <!-- navigation bar -->
 
-</head>
+      <div class="navbar">
+        <a href="../index.html"><img class="logo" src="../img/logo.png" /></a>
+        <ul>
+          <li><a href="../index.html" class="active">HOME</a></li>
+          <div class="dropdown">
+            <li><a href="_">SERVICE </a></li>
+            <div class="dropdown-content">
+              <a href="#">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">Link 3</a>
+            </div>
+          </div>
+          <li><a href="../pages/about-us">ABOUT US </a></li>
+          <li><a href="../pages/contact-us.html">CONTACT US </a></li>
+          <li><a href="../pages/login.html" class="lgn">LOGIN</a></li>
+        </ul>
+      </div>
+      <div class="ht">
+        <div class="card">
+          <div class="heading">Login</div>
+          <div class="">
+            <div class="d-flex flex-column p-3"
+>
+              <input type="text" class="card-title" placeholder="Enter phone number or email" />
+              <input type="password" class="card-title" placeholder="Enter password" />
+			  <button class="btn1">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<body>
-	
-	<div class="main">
+    <!-- navigation bar -->
 
-		<!-- navigation bar -->
+    <!-- Bootstrap css -->
 
-		<div class="navbar">
-			<a href="../index.html"><img class="logo" src="../img/logo.png" /></a>
-			<ul>
-				<li><a href="../index.html" class="active">HOME</a></li>
-				<div class="dropdown">
-					<li><a href="_">SERVICE </a></li>
-					<div class="dropdown-content">
-						<a href="#">Link 1</a>
-						<a href="#">Link 2</a>
-						<a href="#">Link 3</a>
-					</div>
-				</div>
-				<li><a href="../pages/about-us">ABOUT US </a></li>
-				<li><a href="../pages/contact-us.html">CONTACT US </a></li>
-				<li><a href="../pages/login.html" class="lgn">LOGIN</a></li>
-		
-			</ul>
-		</div>
-	</div>
-
-	<!-- navigation bar -->
-
-	<!-- Bootstrap css -->
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-</body>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </body>
 </html>
