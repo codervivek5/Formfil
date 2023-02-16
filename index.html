@@ -7,6 +7,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Home-FormFil</title>
 	<link rel="stylesheet" href="style/style.css" />
+     <link rel="stylesheet" href="style/theme.css">
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -36,6 +37,7 @@
 				<li><a href="pages/about_us.html">ABOUT US </a></li>
 				<li><a href="pages/contact-us.html">CONTACT US </a></li>
 				<li><a href="pages/login.html" class="lgn">LOGIN</a></li>
+                    <img src="img/moon.png" id="icon">
 			</ul>
 		</div>
 
@@ -174,7 +176,20 @@
 </footer>
 
 
-
+<!---- Javascript Code for Dark Mode Switch ---->
+<script>
+	var icon = document.getElementById("icon");
+	icon.onclick = function(){
+		document.body.classList.toggle("dark-mode");
+		if (document.body.classList.contains("dark-mode")){
+			icon.src="img/sun.png";
+		}
+		else {
+			icon.src="img/moon.png";
+		}
+	}
+	
+</script>
 
 
 
