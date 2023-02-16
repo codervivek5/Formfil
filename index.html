@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Home-FormFil</title>
 	<link rel="stylesheet" href="style/style.css" />
+     <link rel="stylesheet" href="style/theme.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
@@ -17,7 +18,7 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
-	<link rel="icon" type="image/x-icon" href="/fevicon.png" />
+	<link rel="icon" type="image/x-icon" href="./img/fevicon.png" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -41,6 +42,7 @@
 				<li><a href="pages/about_us.html">ABOUT US </a></li>
 				<li><a href="pages/contact-us.html">CONTACT US </a></li>
 				<li><a href="pages/login.html" class="lgn">LOGIN</a></li>
+                    <img src="img/moon.png" id="icon">
 			</ul>
 		</div> -->
         <div class="menu  m-0 border-0 ">
@@ -216,7 +218,20 @@
 </footer>
 
 
-
+<!---- Javascript Code for Dark Mode Switch ---->
+<script>
+	var icon = document.getElementById("icon");
+	icon.onclick = function(){
+		document.body.classList.toggle("dark-mode");
+		if (document.body.classList.contains("dark-mode")){
+			icon.src="img/sun.png";
+		}
+		else {
+			icon.src="img/moon.png";
+		}
+	}
+	
+</script>
 
 
 
