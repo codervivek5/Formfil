@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+body{
+    background-color: #1c2833;
+}
+*:focus{
+    outline: none;
+}
+.box{
+    box-sizing: border-box;
+    width: 120px;
+    height: 120px;
+    border: 2px solid #3498db;
+    box-shadow: -3px -3px 7px #ffffff73, 3px 3px 5px rgba(94,104,121,0.288);
+    border-radius: 50%;
+    background-color: black;
+    margin-top: 50px;
+    overflow: hidden;
+    transition: all 1s;
+}
+img{
+    box-sizing: border-box;
+    width: 117px;
+    height: 118px;
+    border-radius: 50%;
+    margin: 0;
+    border: 5px solid #0082e6;
+    padding: 3px;
+    background-color: white;
+}
+input[type="text"],input[type="email"]{
+    display: block;
+    box-sizing: border-box;
+    background: none;
+    color: #3498db;
+    margin-bottom: 30px;
+    padding: 4px;
+    width:220px;
+    height: 32px;
+    border: none;
+    border-bottom: 2px solid #0082e6;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    transition: 0.2s ease;
+}
+input[type="text"]{
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+input[type="text"]:focus,input[type="email"]:focus{
+    border-bottom: 2px solid #3498db;
+    border-bottom-right-radius: 20px;
+    color:#3498db;
+    transition: 0.2 ease;
+}
+button{
+    border: 1px solid #3498db;
+    background-color: #1c2833;
+    color: white;
+    height: 30px;
+    width: 100px;
+    border-radius: 5px;
+    margin: 0px;
+    transition: all 0.3s;
+}
+button:hover{
+    transform: scale(1.1);
+} 
+input[type="file"]{
+    display: none;
+}
+label{
+    box-sizing: border-box;
+    font-size: 20px;
+    background-color: #1c2833;
+    color: white;
+    border: 1px solid #3498db;
+    padding: 2px 15px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+label:hover{
+    background-color: #3498db;
+    color: black;
+}
+.box:hover{
+    width: 360px;
+    height: 630px;
+    border-radius: 5px;
+}
+.box:hover img{
+    width: 100px;
+    height: 100px;
+    margin: 20px 31%;
+}
