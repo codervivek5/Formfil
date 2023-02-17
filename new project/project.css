@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    }
+    body{
+        background-color: rgb(55, 11, 136);
+    }
+    
+    .cart{
+
+        border:3.5px solid;
+        position:center;
+        padding: .5rem;
+        border-radius: .5rem;
+        border-color:rgb(5, 6, 26);
+        width:16rem;
+        background: #9e7575e6;
+    }
+    
+    .cart .box{
+        border:3px solid rgb(62, 15, 191);
+        display: flex;
+        align-items: center;
+        gap:.5rem;
+        position: relative;
+        margin: 0.9rem 0;
+        border-radius: .13rem;
+    }
+    
+    .cart .box:hover{
+        background-color:rgb(214, 32, 32);
+    }
+    
+    .cart .box .content h3{
+           color:black;
+           font-size: 1.5rem;
+           padding-bottom: 1rem;
+    }
+    
+    .cart .box .content span{
+        color:black;
+        font-size: 1.3rem;
+    }
+    
+    .cart .box .content .quantity{
+        font-size: 1rem;
+    }
+    
+    .cart .total{
+        font-size: 1.9rem;
+        padding: .4rem 0;
+        text-align: center;
+        color: black;
+    }
+    
+     .btn{
+       margin-top: 0.6rem;
+       display: inline-block;
+        text-align: center;
+        margin: .4rem 0;
+       padding:.9rem 0.9rem;
+       font-size: 1.5rem;
+       border-radius: .5rem;
+       border:.2rem solid blueviolet;
+       color:brown;
+       cursor: pointer;
+    }
+    
+    .btn:hover{
+       background-color:rgb(128, 55, 0);
+       color:#ffffffd0;
+    }
+    
+    .cart h2{
+        text-align: center;
+        color: rgb(113, 43, 226);
+    }    
