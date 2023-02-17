@@ -8,7 +8,7 @@ font-family: 'Times New Roman', Times, serif;
 	position: relative;
 	height:100vh;
 	width:100%;
-	background:linear-gradient(rgba(244, 245, 243, 0.712),#7b378ec4);
+	background:#EBC7E6;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -118,3 +118,74 @@ font-family: 'Times New Roman', Times, serif;
   /* .dropdown:hover .dropbtn {background-color: #3e8e41;} */
 
     /* _____________________________________________________________________ */
+	.form
+	{
+	  margin:100px;
+	  position:absolute;
+	  color:black;
+	  padding:30px;
+	  font-family:Verdana;
+	  background-color:white;
+	  left:380px;
+	  border-radius:15px;
+	
+	
+	}
+	.wel label{
+	  font-family:Verdana;
+	  font-style: ;
+	  margin-top:0px;
+	  margin-left:80px;
+	  font-size:1.2em;
+	}
+	
+	.input label{
+	  display:block;
+	  margin-top:10px;
+	  font-size:1.1em;
+	}
+	.input input{
+	  width:100%;
+	  border-color:rgba(0,0,0,0.2);
+	  border-radius:10px;
+	  box-sizing: border-box;
+	  padding-left:13px;
+	  margin:5px 0px 0px 4px;
+	  font-family:sans-serif;
+	  font-size:1.2em;
+	  size:220px;
+	}
+	input:focus
+	{
+	  background-color:rgba(0,0,0,0.2);
+	}
+	.radio input{
+	  scale-up(2);
+	}
+	button{
+	  font-family:Verdana;
+	  font-size:1.1em;
+	  width:100%;
+	  border-radius:12px;
+	  border-color:	#C147E9;
+	
+	  background-color:	#C147E9;
+	  display: block;
+	  position:relative;
+	  top:30px;
+	  margin-top:100px;
+	  text-align: center;
+	  margin-left:0px;
+	}
+	.col
+	{
+	  background-color:#0074e8;
+	  border-color:#0074e8;
+	}
+	.logg
+	{
+	  margin-left:200px;
+	  position: absolute;
+	  left:260px;
+	  width:100%;
+	}
