@@ -36,7 +36,7 @@ body{
 @media (max-width: 991.5px) {
     .logo{
         position: absolute;
-        top: -15px;
+        top: -16px;
         left: 200px;
     }
 }
