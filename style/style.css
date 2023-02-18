@@ -212,7 +212,28 @@ footer ul li{
     margin-right: 15px;
     font-size:14px;
 }
-
+.loader{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #7b378ec4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .disppear{
+    animation: vanish 2s forwards;
+  }
+  @keyframes vanish {
+    100%{
+      opacity: 100%;
+      visibility: hidden;
+    }
+  }
 
 
 

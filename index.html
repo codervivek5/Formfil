@@ -19,6 +19,10 @@
 
 <body>
 
+     <div class="loader">
+          <img src="img/logo.png" alt="">
+     </div>
+
 	<div class="main">
 		<!-- Navigation bar -->
 
@@ -191,6 +195,14 @@
 		}
 	}
 	
+</script>
+
+<script>
+     var loader = document.querySelector(".loader");
+     window.addEventListener("load", vanish);
+     function vanish() {
+     loader.classList.add("disppear");
+}
 </script>
 
 
