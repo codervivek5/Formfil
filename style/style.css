@@ -212,7 +212,129 @@ footer ul li{
     margin-right: 15px;
     font-size:14px;
 }
+.service span{
+    letter-spacing: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(179,140,189);
+}
+.contact span{
+    letter-spacing: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(179,140,189);
+}
+.adress span{
+    letter-spacing: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(179,140,189);
+}
+.social span{
+    letter-spacing: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(179,140,189);
+}
+.service a{
+    letter-spacing: 4px !important;
+    position: relative;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.service a:hover {
+    color: rgb(137,130,255) !important;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
 
+ .service a:before, .service a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background:rgb(204,214,246);
+}
+
+ .service a:before {
+  left: 0;
+  transition: 0.5s;
+}
+
+.service a:after {
+  color: rgb(204,214,246);
+  right: 0;
+  /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+}
+ .service a:hover:before {
+  background: rgb(204,214,246);
+  width: 100%;
+  transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+.service a:hover:after {
+  background: transparent;
+  width: 100%;
+}
+
+.contact a{
+    letter-spacing: 4px !important;
+    position: relative;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.contact a:hover {
+    color: rgb(137,130,255) !important;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+ .contact a:before, .service a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background:rgb(204,214,246);
+}
+
+ .contact a:before {
+  left: 0;
+  transition: 0.5s;
+}
+
+.contact a:after {
+  color: rgb(204,214,246);
+  right: 0;
+  /* transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1); */
+}
+ .contact a:hover:before {
+  background: rgb(204,214,246);
+  width: 100%;
+  transition: width 0.5s cubic-bezier((0.22, 0.61, 0.36, 1));
+}
+
+.contact a:hover:after {
+  background: transparent;
+  width: 100%;
+}
+
+.adress p{
+    letter-spacing: 4px !important;
+    position: relative;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.adress p:hover {
+    color: rgb(137,130,255) !important;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+.social i{
+    position: relative;
+}
+.social i:hover {
+    color: rgb(137,130,255) !important;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
 
 
 
