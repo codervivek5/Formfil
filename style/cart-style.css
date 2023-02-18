@@ -1,0 +1,116 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+
+.total{
+    margin-top:50px;
+     margin-left: 35rem;
+}
+
+.cart{
+    border:3.5px solid;
+    position: absolute;
+    /*top:100%;*/
+    /*right:-50%;*/
+    padding: .5rem;
+    border-radius: .5rem;
+    border-color:rgba(122,60,60,0.87);
+   /* width:15rem;*/
+   background:linear-gradient(#fff,#cd8ddfc4);
+}
+
+.cart .order{
+    display: inline-block;
+}
+
+.cart .box{
+    border:2px solid blueviolet;
+    display: flex;
+    align-items: center;
+    gap:.2rem;
+    position: relative;
+    margin: 0.2rem 0;
+    border-radius: .2rem;
+    background:  linear-gradient(rgba(244, 245, 243, 0.712),#7b378ec4); 
+}
+
+.cart .box .content h3{
+       color: #2a1958;
+       font-size: 1.2rem;
+       padding-bottom: 1rem;
+}
+
+.cart .box .content span{
+    color:black;
+    font-size: 1rem;
+}
+
+.cart .box .content .quantity{
+    font-size: 1rem;
+}
+
+.cart .box img{
+    border-radius: 2.8rem;
+    border-color:red;
+}
+
+.cart .total{
+    font-size: 1.4rem;
+    padding: .4rem 0;
+    color: black;
+    margin-left:20px;
+}
+
+ .btn{
+   margin-top: 0.4rem;
+   display: inline-block;
+    text-align: center;
+    margin: .3rem .3rem;
+   padding:.7rem 0.7rem;
+   font-size: .9rem;
+   border-radius: .6rem;
+   border:.2rem solid rgba(122,60,60,0.87);
+   background-color: #2a1958;
+   color:honeydew;
+   cursor: pointer;
+}
+
+.btn:hover{
+   background-color:green;
+   color:#fff;
+}
+
+.cart h2{
+    font-size: 1.2rem;
+    text-align: center;
+   /* color: rgba(122, 60, 60, 0.87);*/
+   color:#2a1958;
+}
+
+ .header{
+    margin-top: 0.8rem;
+    margin-bottom: 0.2rem;
+    margin-left: 8.5rem;
+    text-align: center;
+    padding:.6rem 0.6rem;
+    border-radius: .5rem;
+    border:.2rem solid rgba(122,60,60,0.87);
+    color: honeydew;
+    background-color: #2a1958;
+    cursor: pointer;
+    width:8rem;
+    height:3rem;
+}
+
+.header:hover{
+    background-color: blueviolet;
+    color:#fff;
+}
+
+.header h3{
+    color:honeydew;
+}
+   
