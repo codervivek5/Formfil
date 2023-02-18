@@ -1,0 +1,101 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    min-height: 100vh;
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    background-image:url("../img/image123.jpg");
+    color:#963e7a;
+    background-repeat: center;
+    background-size: cover;
+    background-position: center;
+}
+.container .card{
+    width: 60rem;
+    margin:auto;
+    background: #ffff;
+    position:center;
+    align-self: center;
+    top:60rem;
+    border-radius: 1.5rem;
+    box-shadow:4px 3px 20px black;
+    display:flex;
+    flex-direction: row;
+}
+.container .leftside{
+    background: rgba(0, 0, 0, 0.719);
+    width: 40rem;
+    display:inline-flex;
+    align-items: center;
+    justify-content:center;
+    border-top-left-radius: 1.5rem;
+    border-bottom-left-radius:1.5rem ;
+}
+.item{
+    object-fit: cover;
+    width: 20em;
+    height:20em;
+    border-radius: 100%;
+}
+.rightside{
+    background-color: rgba(245, 245, 245, 0.736);
+    width: 40rem;
+    border-bottom-right-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+    padding: 1rem  2rem 3rem 3rem;
+}
+p{
+    display:block;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top:.1rem ;
+    
+}
+.inputbox{
+    color:#030303;
+    width: 100%;
+    padding:0.5rem;
+    border:none;
+    border-bottom: 1.5px solid #ccc;
+    margin-bottom:1rem;
+    border-radius: 0;
+    color:#615a5a;
+    font-size:1.1rem;
+    font-weight: 400;
+    outline: none;
+}
+.evpcvv{
+    display:flex;
+    justify-content: space-between;
+    padding:6rem;
+
+}
+.evpcvv_text{
+    padding: 0 1rem;
+}
+.evpcvv_text1{
+    padding: 0 1rem; 
+}
+.button{
+    background: linear-gradient(135deg,#298096 0%,#753370 100%);
+    padding: 15px;
+    border:none;
+    border-radius: 50px;
+    color:aliceblue;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-top:10px;
+    width: 100%;
+    letter-spacing: .11rem;
+    outline:none;
+}
+.button:hover{
+    transform:scale(1.05) translateY(-3) ;
+    box-shadow:3px 3px 6px #38373785;
+    transition:.5s
+}
