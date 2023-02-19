@@ -212,6 +212,12 @@ footer ul li{
     margin-right: 15px;
     font-size:14px;
 }
+
+.imgload{
+	height: 25%;
+	width: 15%;
+
+}
 .loader{
     position: fixed;
     z-index: 1;
