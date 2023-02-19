@@ -89,8 +89,8 @@ https://codervivek5.github.io/Formfil.in/
 <h1 align="center">
  <b>Thanks to these amazing people
 <h1>
-<a href="https://github.com/codervivek5/formfill.in/contributors">
-  <img src="https://contrib.rocks/image?repo=codervivek5/formfill.in&&max=817" />
+<a href="https://github.com/codervivek5/Formfil.in/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=codervivek5/Formfil.in" />
 </a>
 </div>
 
@@ -99,7 +99,13 @@ https://codervivek5.github.io/Formfil.in/
 ## 📬 Contact:
 If you want to contact me, you can reach me through below handles.
 
-[![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com/codervivek5/)
+
+ <p>    
+  <a href="https://twitter.com/codervivek5/"><img src= "https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" heigth="10"></a>
+  <a href="https://www.instagram.com/coder_vivek/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" heigth="10"></a>    
+  <a href="https://www.linkedin.com/in/codervivek/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" heigth="10"></a>    
+  <a href="https://www.youtube.com/@codervivek"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" heigth="10"></a>        
+ </p>
  
 © 2022 Coder Vivek
 
@@ -109,8 +115,6 @@ If you want to contact me, you can reach me through below handles.
 
 <!-- Copy-paste in your Readme.md file -->
 
-<a href = "https://github.com/codervivek5/Formfil.in/">
-  <img src = "https://contrib.rocks/image?repo = codervivek5/Formfil.in/"/>
-</a>
+
 
 Made with [contributors-img](https://contrib.rocks).
