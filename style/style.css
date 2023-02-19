@@ -212,6 +212,46 @@ footer ul li{
     margin-right: 15px;
     font-size:14px;
 }
+.service span{
+    letter-spacing: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(179,140,189);
+}
+.contact span{
+    letter-spacing: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(179,140,189);
+}
+.adress span{
+    letter-spacing: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(179,140,189);
+}
+.social span{
+    letter-spacing: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(179,140,189);
+}
+.service a{
+    letter-spacing: 4px !important;
+    position: relative;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.service a:hover {
+    color: rgb(137,130,255) !important;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+ .service a:before, .service a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background:rgb(204,214,246);
+}
 
 .imgload{
 	height: 25%;
@@ -240,6 +280,9 @@ footer ul li{
       visibility: hidden;
     }
   }
+
+ 
+
 
 
 
