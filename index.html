@@ -41,13 +41,19 @@
 				<li><a href="pages/about_us.html">ABOUT US </a></li>
 				<li><a href="pages/contact-us.html">CONTACT US </a></li>
 				<li><a href="pages/login.html" class="lgn">LOGIN</a></li>
+
        
        <li><a href="pages/project.html">Cart </a></li>
+         <img src="img/moon.png" id="icon">
+         
    <!--     <li><a href="pages/cart.html">
          <img src="../img/cart-image.png"  height="50px" width="55px" >
-          </a></li>
-       -->   
-           <img src="img/moon.png" id="icon">
+          </a></li>  
+           <li><a href="pages/cart.html">
+            <img src="img/cart_img.png"  height="50px" width="55px" >
+            </a></li>
+             <img src="img/moon.png" id="icon">
+        -->
 			</ul>
 		</div>
 
@@ -169,11 +175,26 @@
             </div>
        </div> 
     </div>
+    <button class="back-to-top hidden">
+     <svg
+     xmlns="http://www.w3.org/2000/svg"
+     class="back-to-top-icon"
+     fill="none"
+     viewBox="0 0 24 24"
+     stroke="currentColor"
+   >
+     <path
+       stroke-linecap="round"
+       stroke-linejoin="round"
+       stroke-width="2"
+       d="M7 11l5-5m0 0l5 5m-5-5v12"
+     />
+   </svg></button>
 </footer>
 
 
-<!---- Javascript Code for Dark Mode Switch ---->
 <script>
+     // Javascript Code for Dark Mode Switch
 	var icon = document.getElementById("icon");
 	icon.onclick = function(){
 		document.body.classList.toggle("dark-mode");
@@ -184,7 +205,6 @@
 			icon.src="img/moon.png";
 		}
 	}
-	
 </script>
 </body>
 </html>
