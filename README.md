@@ -107,6 +107,10 @@ git push
 
 Made with [contrib.rocks](https://contrib.rocks).
 
+<p><a href="https://GitHub.com/codervivek5/"><img src="http://ForTheBadge.com/images/badges/built-by-developers.svg" alt="ForTheBadge built-by-developers"></a></p>
+
+## 🛡️ License
+This repository is licensed under the [MIT License](https://github.com/codervivek5/Formfil.in/blob/main/LICENSE) - see the LICENSE file for details.
 
 ## 📬 Contact:
 If you want to contact me, you can reach me through below handles.
@@ -118,5 +122,10 @@ If you want to contact me, you can reach me through below handles.
   <a href="https://www.linkedin.com/in/codervivek/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" heigth="10"></a>    
   <a href="https://www.youtube.com/@codervivek"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" heigth="10"></a>        
  </p>
- 
+
+
 <br>
+
+<div align="center">
+<h3>© 2022 Coder Vivek</h3>
+</div>
