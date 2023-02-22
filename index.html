@@ -32,7 +32,7 @@
 			<ul>
 				<li><a href="index.html" class="active">HOME</a></li>
 				<div class="dropdown">
-					<li><a href="#">SERVICE </a></li>
+					<li><a href="pages/service.html">SERVICE </a></li>
 					<div class="dropdown-content">
 						<a href="#">Link 1</a>
 						<a href="#">Link 2</a>
@@ -129,7 +129,7 @@
                 <ul class="contact">
                      <span>Contact</span>    
                      <li>
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                       </li>
                            
                       <li>
@@ -206,12 +206,33 @@
 			icon.src="img/moon.png";
 		}
 	}
-     $(document).ready(function() {
-          // Animate loader off screen
-      setTimeout(function() {
-          $(".loader").fadeOut("slow");
-      }, 0);
-      });
+  $(document).ready(function() {
+      // Animate loader off screen
+   setTimeout(function() {
+    $(".loader").fadeOut("slow");
+   }, 0);
+  });
+      // Javascript Code for Scroll to top Button
+      const showOnPx = 100;
+      const backToTopButton = document.querySelector(".back-to-top")
+     
+     const scrollContainer = () => {
+       return document.documentElement || document.body;
+      };
+ 
+ document.addEventListener("scroll", () => {
+   if (scrollContainer().scrollTop > showOnPx) {
+     backToTopButton.classList.remove("hidden")
+   } else {
+     backToTopButton.classList.add("hidden")
+   }
+ })
+ const goToTop = () => {
+   document.body.scrollIntoView({
+     behavior: "smooth",
+   });
+ };
+ backToTopButton.addEventListener("click", goToTop);      
 </script>
 </body>
 </html>
