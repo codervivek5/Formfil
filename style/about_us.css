@@ -1,3 +1,100 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+body {
+	display: flex;
+	font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+	background: linear-gradient(rgba(244, 245, 243, 0.712), #7b378ec4);
+	height: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	flex-wrap: wrap;
+    justify-content: center;
+}
+.main {
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	margin-top: 2vw;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	margin-bottom: auto;
+	padding-left: 3vw;
+	padding-top: 3vw;
+	padding-right: 3vw;
+	padding-bottom: 5vw;
+	flex-wrap: wrap;
+}
+.about_header {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	margin-top: 2vh;
+	gap: 6vh;
+}
+.heading {
+	word-wrap: break-word;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: "Lato", sans-serif;
+	font-size: 6vw;
+	font-weight: bolder;
+	color: rgb(45, 45, 45);
+	font-size: max(8vh, 7vh);
+	color: rgb(105, 0, 113);
+}
+.info {
+	word-wrap: break-word;
+	flex-shrink: 1;
+	display: flex;
+	flex-wrap: wrap;
+	font-family: "cinzel", sans-serif;
+	font-style: italic;
+	color: #141414c4;
+	font-size: max(5vh, 2.5vh);
+}
+.content {
+	display: flex;
+	flex-direction: column;
+}
+.footer {
+	background-color: rgb(0, 119, 255);
+	display: flex;
+	padding-left: 3vw;
+	padding-top: 3vw;
+	padding-right: 3vw;
+	padding-bottom: 5vw;
+	margin-top: 2vw;
+	margin-left: 3vw;
+	margin-right: 3vw;
+	margin-bottom: 4vh;
+	justify-content: space-between;
+	align-items: center;
+}
+.text1 {
+	color: white;
+	font-size: 1.5rem;
+}
+.btn {
+	font-size: 2rem;
+	color: white;
+	background-color: rgb(0, 119, 255);
+	border: 2px solid white;
+	padding: 1rem;
+	border-radius: 1.5rem;
+	text-decoration: none;
+}
+.logo {
+	display: block;
+	max-width: 50vw;
+	max-height: 25vw;
+	width: auto;
+	height: auto;
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC");
 body {
   font-family: Arial, Helvetica, sans-serif;
