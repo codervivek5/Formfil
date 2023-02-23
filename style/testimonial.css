@@ -17,8 +17,8 @@ body{
 }
 
 .slide-container{
-    max-width: 1120px;
-    background-color:brown;
+    max-width: 1350px;
+    background-color:#7b378ec4;
     width:100%;
     padding: 25px 0;
     border-radius: .9rem;
@@ -74,7 +74,7 @@ body{
     width: 100%;
     object-fit: cover;
     border-radius:50%;
-    border: 4px solid brown;
+    border: 4px solid  brown;
 }
 
 .name{
@@ -102,7 +102,7 @@ body{
     top:0;
     height: 100%;
     width: 100%;
-    background-color: #130735 ;
+    background-color: #2a1958 ;
     border-radius: 25px 25px 25px 0;
 }
 
@@ -112,7 +112,7 @@ body{
     position: absolute;
     height: 40px;
     width: 40px;
-    background-color: #130735;
+    background-color: #2a1958;
     bottom: -40px;
 }
 
@@ -126,7 +126,7 @@ body{
     font-size: 16px;
     color:#fff;
     padding: 8px 16px;
-    background-color: #130735;
+    background-color: rgba(136, 42, 42, 0.87);
     border-radius: 6px;
     margin: 14px;
     cursor: pointer;
