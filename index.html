@@ -11,15 +11,16 @@
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
 	<link rel="icon" type="image/x-icon" href="./img/fevicon.png" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-
-     <div class="loader">
+     
+    <div class="loader">
           <img class= "imgload" src="img/logo.png"  alt="">
      </div>
 
@@ -31,7 +32,7 @@
 			<ul>
 				<li><a href="index.html" class="active">HOME</a></li>
 				<div class="dropdown">
-					<li><a href="#">SERVICE </a></li>
+					<li><a href="pages/service.html">SERVICE </a></li>
 					<div class="dropdown-content">
 						<a href="#">Link 1</a>
 						<a href="#">Link 2</a>
@@ -128,7 +129,7 @@
                 <ul class="contact">
                      <span>Contact</span>    
                      <li>
-                        <a href="#">Home</a>
+                        <a href="index.html">Home</a>
                       </li>
                            
                       <li>
@@ -153,7 +154,7 @@
                <ul class="social">
                     <span>Social</span>    
                     <li>
-                         <a href="https://www.facebook.com/codervivek" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                         <a href="https://www.facebook.com/codervivek"  target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
                     </li>
                    
                     <li>
@@ -205,6 +206,33 @@
 			icon.src="img/moon.png";
 		}
 	}
+  $(document).ready(function() {
+      // Animate loader off screen
+   setTimeout(function() {
+    $(".loader").fadeOut("slow");
+   }, 0);
+  });
+      // Javascript Code for Scroll to top Button
+      const showOnPx = 100;
+      const backToTopButton = document.querySelector(".back-to-top")
+     
+     const scrollContainer = () => {
+       return document.documentElement || document.body;
+      };
+ 
+ document.addEventListener("scroll", () => {
+   if (scrollContainer().scrollTop > showOnPx) {
+     backToTopButton.classList.remove("hidden")
+   } else {
+     backToTopButton.classList.add("hidden")
+   }
+ })
+ const goToTop = () => {
+   document.body.scrollIntoView({
+     behavior: "smooth",
+   });
+ };
+ backToTopButton.addEventListener("click", goToTop);      
 </script>
 </body>
 </html>
