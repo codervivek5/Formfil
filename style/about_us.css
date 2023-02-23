@@ -112,6 +112,7 @@ body {
   height: 80vh;
   padding: 5%;
   margin-bottom: 10px;
+  margin-top: -570px;
   background-image: linear-gradient(to bottom right, #545ced, #de53ee);
 }
 .info {
