@@ -271,10 +271,10 @@ footer ul li{
     align-items: center;
   }
   
-  .disppear{
-    animation: vanish 2s forwards;
+  .loader.hidden{
+    animation: fadeOut 2s forwards;
   }
-  @keyframes vanish {
+  @keyframes fadeOut {
     100%{
       opacity: 100%;
       visibility: hidden;
@@ -332,7 +332,6 @@ footer ul li{
   .back-to-top:hover {
     opacity: 60%;
   }
-  
 
 
 
