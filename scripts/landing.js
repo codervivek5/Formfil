@@ -4,6 +4,6 @@
 // }
 
 function redirectpage(){
-    window.location="index.html";
+    window.location="./pages/home.html";
 }
 setTimeout('redirectpage()', 3500);
