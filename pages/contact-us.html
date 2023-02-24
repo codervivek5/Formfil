@@ -8,6 +8,7 @@
   <title>Contact Us</title>
   <link rel="stylesheet" href="../style/contact-us.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../style/theme.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
   <link rel="icon" type="image/x-icon" href="/img/fevicon.png" />
@@ -39,6 +40,8 @@
         <li><a href="../pages/about_us.html">ABOUT US </a></li>
         <li><a href="../pages/contact-us.html" class="active">CONTACT US </a></li>
         <li><a href="../pages/login.html" class="lgn">LOGIN</a></li>
+        <li><a href="../pages/project.html">Cart </a></li>
+        <img src="../img/moon.png" id="icon">
 
       </ul>
     </div>
@@ -56,20 +59,20 @@
         <p>Get in touch </p>
       </div>
 
+   
       <div class="row">
         <div class="column">
           <div class="con"> <img src="../img/undraw_two_factor_authentication_namy.svg" style="width:85%"></div>
-
         </div>
-
         <div class="column">
-
+          <div id="error"></div>
+          <form name="myForm"> 
           <label for="fname">Full Name</label>
-          <input type="text" id="fname" name="lastname" placeholder="Your name">
-          <label for="lname">Email</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your email">
-          <label for="lname">Mobile Number</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your number">
+          <input type="text" id="fname" name="fname" placeholder="Your name"  oninput="checkname();" required>
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" placeholder="Your email"  oninput="checkemail();" required>
+          <label for="contact">Mobile Number</label>
+          <input type="number" id="contact" name="contact" placeholder="Your number" oninput="checkcontact();" required>
 
           <label for="country">Country</label>
           <select id="country" name="country">
@@ -85,10 +88,11 @@
           </select>
           <label for="subject">Subject</label>
           <textarea id="subject" name="subject" placeholder="Write your thoughts" style="height:160px"></textarea>
-          <input type="submit" value="Submit">
-
+          <input type="submit" value="Submit" id="submitdetails">
+        </form>
         </div>
       </div>
+    
     </div>
   </div>
   </div>
@@ -196,10 +200,47 @@
 
 
 
-
+<script>  
+    function checkname(){
+      var name_in = document.querySelector("#fname")
+      console.log(name_in.value)
+      if(name_in.value.length>10)
+      {
+        name_in.setCustomValidity("Name is too long!")
+      }
+      else
+      {
+        name_in.setCustomValidity("")
+      }
+    }
+    function checkemail(){
+      var em = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      var email_in = document.querySelector("#email");
+      if(!(email_in.value.match(em)))
+      {
+        email_in.setCustomValidity("Email is invalid!");
+      }
+      else
+      {
+        email_in.setCustomValidity("");
+      }
+    }
+    function checkcontact(){
+      var phoneno = /^\d{10}$/;
+      var contact_in = document.querySelector("#contact");
+      if(!(contact_in.value.match(phoneno)))
+      {
+        contact_in.setCustomValidity("Phone Number is invalid!");
+      }
+      else
+      {
+        contact_in.setCustomValidity("");
+      }
+    }
+</script>
 
 <!-- bootstrap scripts -->
-
+<script src="../darkmode.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
