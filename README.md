@@ -81,6 +81,12 @@ git push
 
 **8.** Create a [PR](https://codervivek5.github.io/Formfil.in/) to `develop` !) repository.
 
+## ⌛For Django Configuration
+```bash
+Admin Username - codervivek
+Password - Vivek@123
+```
+
 
 
 ## ⌛Link of The Website
