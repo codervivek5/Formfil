@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
 body{
 	margin:0;
 	padding:0;
@@ -173,8 +175,9 @@ margin-left: 8%;
 }
 /* footer */
 footer{
-     background-color: #33383c;
-     padding:70px 0px;
+     background-color: #0f0e31;
+     padding:20px 0px;
+     z-index: 1;
 }	       
 
 footer ul li{
@@ -197,6 +200,7 @@ footer ul li{
     letter-spacing: 2px;
     text-decoration:none;
     font-size:15px;
+    font-style: sans-serif;
 }
 
 .social li{
@@ -210,26 +214,27 @@ footer ul li{
 .fa{
     color:#9c9c9c;
     margin-right: 15px;
-    font-size:14px;
+    font-size:24px;
 }
 .service span{
     letter-spacing: 8px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Tilt Prism', cursive;
     color:rgb(179,140,189);
 }
 .contact span{
     letter-spacing: 8px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Tilt Prism', cursive;
     color:rgb(179,140,189);
+
 }
 .adress span{
     letter-spacing: 8px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Tilt Prism', cursive;
     color:rgb(179,140,189);
 }
 .social span{
     letter-spacing: 8px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Tilt Prism', cursive;
     color:rgb(179,140,189);
 }
 .service a{
@@ -290,7 +295,18 @@ footer ul li{
     -webkit-transition: all 0.5s ease;
 }
 .adress p:hover {
-    color: rgb(137,130,255) !important;
+    color: rgb(14, 214, 3) !important;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+.contact a{
+    letter-spacing: 4px !important;
+    position: relative;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.contact a:hover {
+    color: rgb(212, 1, 227) !important;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
 }
@@ -298,7 +314,7 @@ footer ul li{
     position: relative;
 }
 .social i:hover {
-    color: rgb(137,130,255) !important;
+    color: rgb(15, 3, 252) !important;
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
 }
