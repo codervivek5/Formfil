@@ -109,7 +109,8 @@ body {
 
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: contents;
+  height: 6rem;
 }
 
 .dropdown-content {

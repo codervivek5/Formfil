@@ -20,13 +20,19 @@ body {
 .navbar ul {
     list-style: none;
     display: flex;
+    height: 100%;
+    width: 100%;
     padding-left: 18px;
     padding-right: 18px;
     flex-wrap: wrap;
 }
 
+.main .navbar ul{
+    height: 100%;
+    width: 100%;
+}
 .navbar #navbarmain li a {
-    font-size: 15px;
+    font-size: 25px;
     color: white;
     text-decoration: none;
     padding-left: 19px;
@@ -34,7 +40,6 @@ body {
 }
 
 .navbar #navbarmain li a:hover {
-    color: #8d0003;
     font-size: 15px;
     background-color: whitesmoke;
     border-radius: 15px;
@@ -45,29 +50,33 @@ body {
     display: block;
 }
 
-.hamburger.active {
+.hamburger.activated {
     background-color: #A273AF;
 }
 
-.hamburger.active .bar:nth-child(2) {
+.hamburger.activated .bar:nth-child(2) {
     opacity: 0;
 }
 
-.hamburger.active .bar:nth-child(1) {
+.hamburger.activated .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
 
-.hamburger.active .bar:nth-child(3) {
+.hamburger.activated .bar:nth-child(3) {
     transform: translateY(-8px) rotate(135deg);
 }
 
 .navbar {
     display: flex;
+    flex-direction: column;
     position: absolute;
-    top: -100%;
+    left: -500%;
     gap: 0;
+    height: 100%;
     background-color: #A273AF;
     width: 100%;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     transition: 0.4;
 }
 
@@ -79,11 +88,7 @@ body {
 }
 
 .navbar #logo {
-    display: flex;
-    height: 120px;
-    top: -90px;
-    left: 22%;
-    width: 120px;
+    display: none;
 }
 
 #box {
@@ -100,9 +105,11 @@ body {
     padding: 20px;
 }
 
-.navbar.active {
+.navbar.activated {
     padding: 0;
-    top: 60px;
+    left: -1px;
+    height: 218%;
+    top: 66px;
     transition: all 0.3s ease-in-out;
     background-color: none;
     justify-content: space-evenly;
@@ -114,6 +121,8 @@ body {
 
 .navbar ul {
     display: flex;
+    flex-direction: column;
+    font-size: 5rem;
     align-items: center;
 }
 
@@ -121,6 +130,7 @@ footer {
     background-color: #33383c;
     padding: 70px 0px;
     margin-top: 60pc;
+    z-index: -100;
 }
 
 #button {
@@ -129,6 +139,11 @@ footer {
     align-items: center;
 }
 
+@media screen and (max-width: 785px) {
+    .navbar.activated {
+        height: 191%;
+    }
+}
 @media screen and (max-width: 780px) {
     footer {
         background-color: #33383c;
@@ -137,11 +152,11 @@ footer {
     }
 
     .navbar #navbarmain li a {
-        font-size: 12px;
+        font-size: 25px;
     }
 
     .navbar #navbarmain li a:hover {
-        font-size: 12px;
+        font-size: 25px;
     }
 }
 
@@ -152,27 +167,21 @@ footer {
         margin-top: 32pc;
     }
 
-    .navbar .active{
-        top: 46%;
+    .navbar .activated{
+        left: 100%;
     }
 
     .navbar #navbarmain li a {
-        font-size: 9px;
+        font-size: 20px;
     }
 
     .navbar #navbarmain li a:hover {
-        font-size: 9px;
+        font-size: 20px;
     }
-
-    .navbar #logo {
-        left: 24%;
-        top: -90px;
-        height: 120px;
-        width: 120px;
-    }
-
     .h1, .h2, .h3, h1, h2, h3 {
         margin-top: 30px;
       }
-
+      .navbar.activated {
+        height: 164%;
+    }
 }
