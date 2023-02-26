@@ -10,7 +10,21 @@ def index(request):
 def loginpage(request):
     # return HttpResponse("this is home page")
     return render(request, "login.html")
+def signup(request):
+    # return HttpResponse("this is home page")
+    return render(request, "signup.html")
+
+def contactus(request):
+    # return HttpResponse("this is home page")
+    return render(request, "contact-us.html")
+
+def cart(request):
+    # return HttpResponse("this is home page")
+    return render(request, "cart.html")
+
+def service(request):
+    return render(request, "service.html")
 
 def about(request):
-    return HttpResponse("this is about page")
+    return render(request, "about_us.html")
 

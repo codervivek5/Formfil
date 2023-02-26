@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -5,14 +7,14 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
-		<link rel="stylesheet" href="../style/about_us.css" />
-		<link rel="icon" type="image/x-icon" href="../img/crop_logo.png" />
+		<link rel="stylesheet" href="../static/style/about_us.css" />
+		<link rel="icon" type="image/x-icon" href="../static/img/crop_logo.png" />
 	</head>
 
 	<body>
 		<div class="content">
 			<div class="about_header">
-				<img src="../img/logo.png" alt="Formfil Logo" class="logo" />
+				<img src="../static/img/logo.png" alt="Formfil Logo" class="logo" />
 				<div class="main">
 					<div class="heading">About Formfil</div>
 					<div class="info">
@@ -33,7 +35,7 @@
 			</div>
 			<div class="footer">
 				<div class="text1">This is an open-source project</div>
-				<a class="btn" href="login.html">Log In Now!</a>
+				<a class="btn" href="/login/">Log In Now!</a>
 			</div>
 		</div>
 	</body>
@@ -44,8 +46,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>About Us</title>
-  <link rel="stylesheet" href="../style/about_us.css">
-  <link rel="stylesheet" href="../style/theme.css">
+  <link rel="stylesheet" href="../static/style/about_us.css">
+  <link rel="stylesheet" href="../static/style/theme.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
@@ -60,10 +62,10 @@
     
     <div class="navbar">
 
-      <a href="../index.html"><img class="logo" src="../img/logo.png" /></a>
+      <a href="../"><img class="logo" src="../static/img/logo.png" /></a>
 
       <ul>
-        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../">HOME</a></li>
 
         <div class="dropdown">
           <li><a href="service.html">SERVICE </a></li>
@@ -75,11 +77,11 @@
         </div>
 
         
-        <li><a href="about_us.html" class="active">ABOUT US </a></li>
-        <li><a href="contact-us.html">CONTACT US </a></li>
-        <li><a href="login.html" class="lgn">LOGIN</a></li>
-        <li><a href="../pages/project.html">Cart </a></li>
-        <img src="../img/moon.png" id="icon">
+        <li><a href="/about/" class="active">ABOUT US </a></li>
+        <li><a href="/contact/">CONTACT US </a></li>
+        <li><a href="/login/" class="lgn">LOGIN</a></li>
+        <li><a href="/cart/">Cart </a></li>
+        <img src="../static/img/moon.png" id="icon">
         
       </ul>
     </div>
@@ -95,7 +97,7 @@
     </div>
 
     <img class="img1">
-      <img src="../img/people.png" alt="people">
+      <img src="../static/img/people.png" alt="people">
   </img>
     
   </section>  
@@ -330,11 +332,11 @@
           <ul class="contact">
                <span>Contact</span>    
                <li>
-                  <a href="../index.html">Home</a>
+                  <a href="../">Home</a>
                 </li>
                      
                 <li>
-                   <a href="about_us.html">About</a>
+                   <a href="/about/">About</a>
                 </li>
                      
                 <li>
@@ -346,7 +348,7 @@
                 </li>
                      
                 <li>
-                  <a href="../pages/contact-us.html">Contact us</a>
+                  <a href="/contact/">Contact us</a>
                </li>
           </ul>
       </div>
@@ -376,7 +378,7 @@
          </ul>
     </div>
      </div> 
-     <script src="../darkmode.js"></script>
+     <script src="../static/darkmode.js"></script>
   
 </footer>
 

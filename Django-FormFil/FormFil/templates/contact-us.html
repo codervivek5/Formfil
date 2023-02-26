@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,13 +24,13 @@
 
     <div class="navbar">
 
-      <a href="../index.html"><img class="logo" src="../static/img/logo.png" /></a>
+      <a href="../"><img class="logo" src="../static/img/logo.png" /></a>
 
       <ul>
-        <li><a href="../index.html" >HOME</a></li>
+        <li><a href="../" >HOME</a></li>
 
         <div class="dropdown">
-          <li><a href="service.html">SERVICE </a></li>
+          <li><a href="/service/">SERVICE </a></li>
           <div class="dropdown-content">
             <a href="#">Link 1</a>
             <a href="#">Link 2</a>
@@ -37,10 +39,10 @@
         </div>
 
 
-        <li><a href="../pages/about_us.html">ABOUT US </a></li>
-        <li><a href="../pages/contact-us.html" class="active">CONTACT US </a></li>
-        <li><a href="../pages/login.html" class="lgn">LOGIN</a></li>
-        <li><a href="../pages/project.html">Cart </a></li>
+        <li><a href="/about/">ABOUT US </a></li>
+        <li><a href="/contact/" class="active">CONTACT US </a></li>
+        <li><a href="/login/" class="lgn">LOGIN</a></li>
+        <li><a href="/cart/">Cart </a></li>
         <img src="../static/img/moon.png" id="icon">
 
       </ul>
@@ -147,11 +149,11 @@
           <ul class="contact">
                <span>Contact</span>    
                <li>
-                  <a href="../index.html">Home</a>
+                  <a href="../">Home</a>
                 </li>
                      
                 <li>
-                   <a href="about_us.html">About</a>
+                   <a href="/about/">About</a>
                 </li>
                      
                 <li>
@@ -163,7 +165,7 @@
                 </li>
                      
                 <li>
-                  <a href="contact-us.html">Contact us</a>
+                  <a href="/contact/">Contact us</a>
                </li>
           </ul>
       </div>
