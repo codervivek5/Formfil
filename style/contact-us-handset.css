@@ -95,6 +95,11 @@ body {
     display: none;
 }
 
+.main .navbar ul .lgn {
+    border: none;
+    background-color:transparent;
+}
+
 #box {
     display: flex;
     flex-direction: column-reverse;
