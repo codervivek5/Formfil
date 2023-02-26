@@ -8,36 +8,29 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Home-FormFil</title>
-<!-- Custome css -->
+	<link rel="stylesheet" href="{% static 'style.css' %}" />
+     <link rel="stylesheet" href="{% static 'theme.css' %}">
 
-<link rel="stylesheet" href="{% static 'style/style.css' %}" />
-<link rel="stylesheet" href="{% static 'style/theme.css' %}">
-<!-- Custome css -->
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
      
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
-
-<!-- favicon -->
-<link rel="icon" type="image/x-icon" href="{% static 'img/fevicon.png' %}" />
-<!-- favicon -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
+	<link rel="icon" type="image/x-icon" href="{%static '/img/fevicon.png'%}" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body style="overflow-x: hidden !important;">
      
     <div class="loader">
-          <img class= "imgload" src="{% static 'img/logo.png' %}"  alt="logo">
+          <img class= "imgload" src="{% static 'img/logo.png'%}"  alt="">
      </div>
 
 	<div class="main">
 		<!-- Navigation bar -->
 
 		<div class="navbar">
-			<a href="index.html"><img class="logo" src="{% static 'img/logo.png' %}" /></a>
+			<a href="index.html"><img class="logo" src="{% static 'img/logo.png'%}" /></a>
 			<ul>
 				<li><a href="index.html" class="active">HOME</a></li>
 				<div class="dropdown">
@@ -48,13 +41,13 @@
 						<a href="#">Link 3</a>
 					</div>
 				</div>
-				<li><a href="pages/about_us.html">ABOUT US </a></li>
-				<li><a href="pages/contact-us.html">CONTACT US </a></li>
-				<li><a href="pages/login.html" class="lgn">LOGIN</a></li>
+				<li><a href="/aboutus">ABOUT US </a></li>
+				<li><a href="/contactus">CONTACT US </a></li>
+				<li><a href="/login" class="lgn">LOGIN</a></li>
 
        
        <li><a href="pages/project.html">CART</a></li>
-         <img src="{% static 'img/moon.png' %}" id="icon">
+         <img src="{%static 'img/moon.png'%}" id="icon">
          
    <!--     <li><a href="pages/cart.html">
          <img src="../img/cart-image.png"  height="50px" width="55px" >
@@ -81,11 +74,11 @@
 					mattis nunc, suspendisse mi habitasse.
 				</p>
 				<div class="btn">
-					<a href="pages/signup.html"> <button class="btn1 button">REGISTER</button></a>
+					<a href="/signup"> <button class="btn1 button">REGISTER</button></a>
 				</div>
 			</div>
 			<div class="shipp">
-				<img src="{% static 'img/svg.svg' %}" />
+				<img src="{% static 'img/svg.svg'%}" />
 			</div>
 		</div>
 	</div>
@@ -138,11 +131,11 @@
                 <ul class="contact">
                      <span>Contact</span>    
                      <li>
-                        <a href="index.html">Home</a>
+                        <a href="/">Home</a>
                       </li>
                            
                       <li>
-                         <a href="pages/about_us.html">About</a>
+                         <a href="aboutus">About</a>
                       </li>
                            
                       <li>
@@ -210,10 +203,10 @@
 	icon.onclick = function(){
 		document.body.classList.toggle("dark-mode");
 		if (document.body.classList.contains("dark-mode")){
-			icon.src="{% static 'img/sun.png' %}";
+			icon.src="{%static 'img/sun.png'%}";
 		}
 		else {
-			icon.src="{% static 'img/moon.png' %}";
+			icon.src="{%static 'img/moon.png'%}";
 		}
 	}
   //javascript for loader
