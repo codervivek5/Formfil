@@ -9,24 +9,28 @@
   <link rel="stylesheet" href="../style/contact-us.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="../style/theme.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
   <link rel="icon" type="image/x-icon" href="../img/crop_logo.png" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen and (max-width: 1230px)" href="../style/contact-us-handset.css">
 
 </head>
 
 <body>
   <div class="main">
     <!-- ----------------------Navigation bar---------------------- -->
-
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
     <div class="navbar">
 
-      <a href="../index.html"><img class="logo" src="../img/logo.png" /></a>
+      <a href="../index.html"><img class="logo" src="../img/logo.png" id="logo"/></a>
 
-      <ul>
-        <li><a href="../index.html" >HOME</a></li>
-
+      <ul id="navbarmain">
+        <li><a href="../index.html">HOME</a></li>
         <div class="dropdown">
           <li><a href="service.html">SERVICE </a></li>
           <div class="dropdown-content">
@@ -35,12 +39,10 @@
             <a href="#">Link 3</a>
           </div>
         </div>
-
-
         <li><a href="../pages/about_us.html">ABOUT US </a></li>
         <li><a href="../pages/contact-us.html" class="active">CONTACT US </a></li>
         <li><a href="../pages/login.html" class="lgn">LOGIN</a></li>
-        <li><a href="../pages/project.html">Cart </a></li>
+        <li><a href="../pages/project.html">CART </a></li>
         <img src="../img/moon.png" id="icon">
 
       </ul>
@@ -59,184 +61,186 @@
         <p>Get in touch </p>
       </div>
 
-   
-      <div class="row">
-        <div class="column">
+
+      <div class="row" id="box">
+        <div class="column" id="compimg">
           <div class="con"> <img src="../img/undraw_two_factor_authentication_namy.svg" style="width:85%"></div>
         </div>
         <div class="column">
           <div id="error"></div>
-          <form name="myForm"> 
-          <label for="fname">Full Name</label>
-          <input type="text" id="fname" name="fname" placeholder="Your name"  oninput="checkname();" required>
-          <label for="email">Email</label>
-          <input type="text" id="email" name="email" placeholder="Your email"  oninput="checkemail();" required>
-          <label for="contact">Mobile Number</label>
-          <input type="number" id="contact" name="contact" placeholder="Your number" oninput="checkcontact();" required>
+          <form name="myForm">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Your name" oninput="checkname();" required>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email" oninput="checkemail();" required>
+            <label for="contact">Mobile Number</label>
+            <input type="number" id="contact" name="contact" placeholder="Your number" oninput="checkcontact();"
+              required>
 
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="India">India</option>
-            <option value="Ukrain">Bangladesh</option>
-            <option value="Ukrain">Pakistan</option>
-            <option value="Ukrain">China</option>
-            <option value="russia">Russia</option>
-            <option value="Ukrain">Ukrain</option>
-            <option value="Ukrain">England</option>
-            <option value="Ukrain">United State</option>
-            <option value="Ukrain">Other</option>
-          </select>
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write your thoughts" style="height:160px"></textarea>
-          <input type="submit" value="Submit" id="submitdetails">
-        </form>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="India">India</option>
+              <option value="Ukrain">Bangladesh</option>
+              <option value="Ukrain">Pakistan</option>
+              <option value="Ukrain">China</option>
+              <option value="russia">Russia</option>
+              <option value="Ukrain">Ukrain</option>
+              <option value="Ukrain">England</option>
+              <option value="Ukrain">United State</option>
+              <option value="Ukrain">Other</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write your thoughts" style="height:160px"></textarea>
+            <div id="button">
+
+              <input type="submit" value="Submit" id="submitdetails">
+            </div>
+          </form>
         </div>
       </div>
-    
+
     </div>
   </div>
   </div>
 
 
-</body>
-<!-- footer -->
-<footer>
+  <!-- footer -->
+  <footer>
   <div>
-      <div class="row">
-        <div class="col-lg-3 col-md-5 col-sm-4 col-xs-12">
-          <ul class="adress">
-               <span>Adress</span>    
-               <li>
-                  <p>Lorem ipsum dolor sit amet, vero omnis vocibus</p>
-                </li>
-                     
-                <li>
-                  <p>+90 1234 56789</p>
-                </li>
-                     
-                <li>
-                  <p>info@gmail.com</p>
-                </li>
-           </ul>
+    <div class="row">
+      <div class="col-lg-3 col-md-5 col-sm-4 col-xs-12">
+        <ul class="adress">
+          <span>Adress</span>
+          <li>
+            <p>Lorem ipsum dolor sit amet, vero omnis vocibus</p>
+          </li>
+          
+          <li>
+            <p>+90 1234 56789</p>
+          </li>
+          
+          <li>
+            <p>info@gmail.com</p>
+          </li>
+        </ul>
       </div>
       <div class="col-lg-3 col-md-5 col-sm-4 col-xs-12">
-         <ul class="service">
-              <span>Services</span>    
-              <li>
-                 <a href="#">DigitalMarket Service</a>
-               </li>
-                    
-               <li>
-                  <a href="#">Service 2</a>
-               </li>
-                    
-               <li>
-                 <a href="#">Service 3</a>
-               </li>
-                    
-               <li>
-                  <a href="#">Service 4 </a>
-               </li>
-                    
-               <li>
-                 <a href="#">Service 5</a>
-              </li>
-         </ul>
-     </div>
-      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
-          <ul class="contact">
-               <span>Contact</span>    
-               <li>
-                  <a href="../index.html">Home</a>
-                </li>
-                     
-                <li>
-                   <a href="about_us.html">About</a>
-                </li>
-                     
-                <li>
-                  <a href="#">Blog</a>
-                </li>
-                     
-                <li>
-                   <a href="#">Gallery </a>
-                </li>
-                     
-                <li>
-                  <a href="contact-us.html">Contact us</a>
-               </li>
-          </ul>
+        <ul class="service">
+          <span>Services</span>
+          <li>
+            <a href="#">DigitalMarket Service</a>
+          </li>
+
+          <li>
+            <a href="#">Service 2</a>
+          </li>
+
+          <li>
+            <a href="#">Service 3</a>
+          </li>
+          
+          <li>
+            <a href="#">Service 4 </a>
+          </li>
+          
+          <li>
+            <a href="#">Service 5</a>
+          </li>
+        </ul>
       </div>
- 
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+        <ul class="contact">
+          <span>Contact</span>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
+
+          <li>
+            <a href="about_us.html">About</a>
+          </li>
+
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          
+          <li>
+            <a href="#">Gallery </a>
+          </li>
+          
+          <li>
+            <a href="contact-us.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+
       <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
         <ul class="social">
-           <span>Social</span>    
-           <li>
+          <span>Social</span>
+          <li>
             <a href="https://www.facebook.com/codervivek" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
-       </li>
-      
-       <li>
+          </li>
+          
+          <li>
             <a href="https://github.com/codervivek5" target="_blank"><i class="fa fa-github fa-2x"></i></a>
-       </li>
-        
-       <li>
+          </li>
+          
+          <li>
             <a href="https://www.linkedin.com/in/codervivek/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
-       </li>
-       
-       <li>
-        <a href="https://twitter.com/codervivek5" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-       </li>
-        
-       <li>
-        <a href="https://www.youtube.com/codervivek" target="_blank"><i class="fa fa-youtube-play fa-2x"></i></a>
-      </li>           
-         </ul>
+          </li>
+          
+          <li>
+            <a href="https://twitter.com/codervivek5" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+          </li>
+          
+          <li>
+            <a href="https://www.youtube.com/codervivek" target="_blank"><i class="fa fa-youtube-play fa-2x"></i></a>
+          </li>
+        </ul>
+      </div>
     </div>
-     </div> 
   </div>
 </footer>
+</body>
 
-
-
-
-
-<script>  
-    function checkname(){
-      var name_in = document.querySelector("#fname")
-      console.log(name_in.value)
-      if(name_in.value.length>10)
-      {
-        name_in.setCustomValidity("Name is too long!")
-      }
-      else
-      {
-        name_in.setCustomValidity("")
-      }
+<script>
+  function checkname() {
+    var name_in = document.querySelector("#fname")
+    console.log(name_in.value)
+    if (name_in.value.length > 10) {
+      name_in.setCustomValidity("Name is too long!")
     }
-    function checkemail(){
-      var em = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-      var email_in = document.querySelector("#email");
-      if(!(email_in.value.match(em)))
-      {
-        email_in.setCustomValidity("Email is invalid!");
-      }
-      else
-      {
-        email_in.setCustomValidity("");
-      }
+    else {
+      name_in.setCustomValidity("")
     }
-    function checkcontact(){
-      var phoneno = /^\d{10}$/;
-      var contact_in = document.querySelector("#contact");
-      if(!(contact_in.value.match(phoneno)))
-      {
-        contact_in.setCustomValidity("Phone Number is invalid!");
-      }
-      else
-      {
-        contact_in.setCustomValidity("");
-      }
+  }
+  function checkemail() {
+    var em = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var email_in = document.querySelector("#email");
+    if (!(email_in.value.match(em))) {
+      email_in.setCustomValidity("Email is invalid!");
     }
+    else {
+      email_in.setCustomValidity("");
+    }
+  }
+  function checkcontact() {
+    var phoneno = /^\d{10}$/;
+    var contact_in = document.querySelector("#contact");
+    if (!(contact_in.value.match(phoneno))) {
+      contact_in.setCustomValidity("Phone Number is invalid!");
+    }
+    else {
+      contact_in.setCustomValidity("");
+    }
+  }
+  const hamburger = document.querySelector(".hamburger");
+
+  const navbar = document.querySelector(".navbar");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("activated");
+    navbar.classList.toggle("activated");
+  })
 </script>
 
 <!-- bootstrap scripts -->
