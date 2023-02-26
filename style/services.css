@@ -10,6 +10,7 @@
     display: grid;
     place-items: center;
     background-color: #d1d1d0;
+    
   }
   .row {
     display: flex;

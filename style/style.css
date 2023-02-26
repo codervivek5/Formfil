@@ -8,7 +8,7 @@ font-family: 'Times New Roman', Times, serif;
 }
 .main{
 	position: relative;
-	height:100vh;
+	height:100%;
 	width:100%;
 	background:linear-gradient(rgba(244, 245, 243, 0.712),#7b378ec4);
 	background-position: center;
@@ -126,8 +126,9 @@ font-family: 'Times New Roman', Times, serif;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    top: 25vh;
+    top: 20vh;
     padding: 0px 25px;
+    
     
 
 
