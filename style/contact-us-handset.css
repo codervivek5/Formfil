@@ -66,6 +66,10 @@ body {
     transform: translateY(-8px) rotate(135deg);
 }
 
+#compimg{
+    display: none;
+}
+
 .navbar {
     display: flex;
     flex-direction: column;
