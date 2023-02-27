@@ -172,29 +172,166 @@ font-family: 'Times New Roman', Times, serif;
 	background-color:rgba(0, 0, 0, 0.87);
 }
 /* footer */
-.footer{
-background-color:rgb(119, 5, 100);
-display: block;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 40vh;
+footer{
+     background-color: #33383c;
+     padding:70px 0px;
+}	       
+
+footer ul li{
+    padding:5px 0px;
+}
+
+.adress span , .contact span , .social span, .service span{
+   color: #FFF; 
+   font-weight: 800; 
+   padding-bottom: 10px; 
+   margin-bottom: 20px;
+   display: block;
+   text-transform: uppercase;
+   font-size: 20px;
+   letter-spacing: 3px;
+}
+ 
+.adress li p , .contact li a , .social li a, .service li a{
+    color:#FFF;
+    letter-spacing: 2px;
+    text-decoration:none;
+    font-size:15px;
+}
+
+.social li{
+    float:left;
+}
+
+.adress , .contact , .social , .service{
+    list-style: none;
+}
+
+.fa{
+    color:#9c9c9c;
+    margin-right: 15px;
+    font-size:14px;
+}
+.service span{
+    letter-spacing: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(179,140,189);
+}
+.contact span{
+    letter-spacing: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(179,140,189);
+}
+.adress span{
+    letter-spacing: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(179,140,189);
+}
+.social span{
+    letter-spacing: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color:rgb(179,140,189);
+}
+.service a{
+    letter-spacing: 4px !important;
+    position: relative;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+}
+.service a:hover {
+    color: rgb(137,130,255) !important;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+
+ .service a:before, .service a:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1px;
+  bottom: -1px;
+  background:rgb(204,214,246);
+}
+
+.imgload{
+	height: 25%;
+	width: 15%;
 
 }
-.linkss{
-text-align: center;
-	color: white;
-	padding: 20px;
-} 
+.loader{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #7b378ec4;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .loader.hidden{
+    animation: fadeOut 2s forwards;
+  }
+  @keyframes fadeOut {
+    100%{
+      opacity: 100%;
+      visibility: hidden;
+    }
+  }
 
-.copy{
+ 
 
-color: white;
-padding: 20px;
-
-	text-align: center;
-	background-color:#530346;
+.adress p{
+    letter-spacing: 4px !important;
+    position: relative;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
 }
+.adress p:hover {
+    color: rgb(137,130,255) !important;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+.social i{
+    position: relative;
+}
+.social i:hover {
+    color: rgb(137,130,255) !important;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+}
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+}
+.hidden {
+    display: none;
+        opacity: 0%;
+      
+  }
+.back-to-top {
+    position: fixed;
+    right: 2rem;
+    bottom: 2rem;
+    border-radius: 100%;
+    background: gray;
+    padding: 1.5rem;
+    border: none;
+    cursor: pointer;
+    opacity: 100%;
+    transition: opacity 0.5s;
+  }
+  .back-to-top-icon {
+    width: 2rem;
+    height: 2rem;
+    color: white;
+  }
+  .back-to-top:hover {
+    opacity: 60%;
+  }
 
 .footerpart{
 	text-align: center;

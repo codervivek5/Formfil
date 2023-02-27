@@ -1,7 +1,13 @@
-## **Welcome to Formfil.in** 👋
-This site is specifically designed for cyber cafes to manage their operations and provide services to their customers. Whether you're running a small internet cafe or a large gaming center, this site has everything you need to streamline your business and offer an exceptional experience to your customers. With features such as Online Form Filling, Samaj kalyan vibhag work like create adhar,PAN card, voter ID card and many more services helps you efficiently manage your cyber cafe, freeing up time and resources to focus on growing your business. 
+<div align="center">
+<h1>Formfil.in</h1>
+</div>
 
-So, if you're looking for a complete solution for your cyber cafe, this site is the right choice for you. 
+## 👋 Welcome
+- This site is specifically designed for cyber cafes to manage their operations and provide services to their customers. 
+- Whether you're running a small internet cafe or a large gaming center, this site has everything you need to streamline your business and offer an exceptional experience to your customers. 
+- With features such as **Online Form Filling, Samaj kalyan vibhag work like create adhar,PAN card, voter ID card** and many more services helps you efficiently manage your cyber cafe, freeing up time and resources to focus on growing your business. 
+
+<h3><em>So, if you're looking for a complete solution for your cyber cafe, this site is the right choice for you! </em></h3>
     
   
 ## 📌Repository
@@ -17,19 +23,30 @@ This will be very helpful for villagers and for those who is so far from the cit
 
 
 ## 🔑Tech Stacks
-Skills : Python, HTML, CSS, JS, Java, Bootstrap, Android, Django
+<!-- Skills : Python, HTML, CSS, JS, Java, Bootstrap, Android, Django -->
+Technologies Used :
 
+- ![Python](https://img.shields.io/badge/Python-3.7%2B-blue)
+- ![HTML](https://img.shields.io/badge/HTML-5-orange)
+- ![CSS](https://img.shields.io/badge/CSS-3-blue)
+- ![JavaScript](https://img.shields.io/badge/JavaScript-ES6-yellow)
+- ![Java](https://img.shields.io/badge/Java-11-red)
+- ![Bootstrap](https://img.shields.io/badge/Bootstrap-5-blueviolet)
+- ![Android](https://img.shields.io/badge/Android-9%2B-brightgreen)
+- ![Django](https://img.shields.io/badge/Django-3.2%2B-green)
+
+## :sparkles: Note 
 When raising an issue, do make sure to mention the kind of feature, feature title, short description of the feature and how would you expect it to work. As a good practice, always link the issue number with pull request. (#issue number : Give this details when you raise a PR).
 
 If you want to work on this unique project and share it with the world, you can do that here. Go through the contributing guidelines here.
 
     
-## Contributing :handshake:
+## :handshake: Contributing 
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat&logo=git&logoColor=white)](https://github.com/hound77/jwoc-archive/pulls)  [![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/hound77/jwoc-archive)
 
-> Please read our [Code of Conduct](CODE_OF_CONDUCT.md).
-**We're accepting PRs for our open and unassigned [issues](https://github.com/hound77/jwoc-archive/issues)**. Please check [CONTRIBUTING.md](CONTRIBUTING.md). We'd love your contributions! **Kindly follow the steps below to get started:** 
+> Please read our [Code of Conduct](https://github.com/codervivek5/Formfil.in/blob/main/CODE_OF_CONDUCT.md).
+**We're accepting PRs for our open and unassigned [issues](https://github.com/hound77/jwoc-archive/issues)**. Please check [CONTRIBUTING.md](https://github.com/codervivek5/Formfil.in/blob/main/CONTRIBUTING.md). We'd love your contributions! **Kindly follow the steps below to get started:** 
 
 
 **1.** Fork [this](https://codervivek5.github.io/Formfil.in/) repository.
@@ -64,10 +81,16 @@ git push
 
 **8.** Create a [PR](https://codervivek5.github.io/Formfil.in/) to `develop` !) repository.
 
+## 🦄 Django Configuration
+```bash
+Admin Username - codervivek
+Password - Vivek@123
+```
+
 
 
 ## ⌛Link of The Website
-https://codervivek5.github.io/Formfil.in/
+[Click Here](https://codervivek5.github.io/Formfil.in/)
 ## ⚙️ Things to Note
 - Make sure you do not copy codes from external sources because that work will not be considered. Plagiarism is strictly not allowed.
 - You can only work on issues that have been assigned to you.
@@ -82,23 +105,33 @@ https://codervivek5.github.io/Formfil.in/
 ## 🙂 Project Admin:
 ![62784060](https://user-images.githubusercontent.com/62784060/154093320-99598cbd-cce0-4dda-a9e5-38c947f088d5.jpg)
 
+## 😍 Our Contributors :
 
+<a href="https://github.com/codervivek5/Formfil.in/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=codervivek5/Formfil.in" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
+
+<p><a href="https://GitHub.com/codervivek5/"><img src="http://ForTheBadge.com/images/badges/built-by-developers.svg" alt="ForTheBadge built-by-developers"></a></p>
+
+## 🛡️ License
+This repository is licensed under the [MIT License](https://github.com/codervivek5/Formfil.in/blob/main/LICENSE) - see the LICENSE file for details.
 
 ## 📬 Contact:
 If you want to contact me, you can reach me through below handles.
 
-[![Twitter](https://badgen.net/badge/icon/twitter?icon=twitter&label)](https://twitter.com/codervivek5/)
- 
-© 2022 Coder Vivek
+
+ <p>    
+  <a href="https://twitter.com/codervivek5/"><img src= "https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" heigth="10"></a>
+  <a href="https://www.instagram.com/coder_vivek/"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" heigth="10"></a>    
+  <a href="https://www.linkedin.com/in/codervivek/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" heigth="10"></a>    
+  <a href="https://www.youtube.com/@codervivek"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" heigth="10"></a>        
+ </p>
 
 
+<br>
 
-[![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/codervivek5/) [![ForTheBadge built-by-developers](http://ForTheBadge.com/images/badges/built-by-developers.svg)](https://GitHub.com/codervivek5/)
-
-<!-- Copy-paste in your Readme.md file -->
-
-<a href = "https://github.com/codervivek5/Formfil.in/">
-  <img src = "https://contrib.rocks/image?repo = codervivek5/Formfil.in/"/>
-</a>
-
-Made with [contributors-img](https://contrib.rocks).
+<div align="center">
+<h3>© 2022 Coder Vivek</h3>
+</div>
