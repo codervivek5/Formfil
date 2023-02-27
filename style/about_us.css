@@ -1,7 +1,6 @@
 body{
 	margin:0;
 	padding:0;
-	background:linear-gradient(rgba(244, 245, 243, 0.712),#7b378ec4);
 font-family: 'Times New Roman', Times, serif;
 }
 /* ............Footer ...............*/
@@ -30,6 +29,8 @@ ul{
 .img1{
     float: right;
     position: relative;
+    max-width: 50%;
+    max-height: 50%;
     width: 150px;
     height: 150px;
     top: -25px;
@@ -38,6 +39,7 @@ ul{
     font-size:30px;
     font-weight:600;
     color:#fff;
+    padding: auto;
 }
 .container-about{
   display: flex;
