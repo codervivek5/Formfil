@@ -126,8 +126,6 @@ font-family: 'Times New Roman', Times, serif;
     position: relative;
     top: 25vh;
     padding: 0px 25px;
-    
-
 
 }
 .shipp img{
@@ -135,15 +133,17 @@ font-family: 'Times New Roman', Times, serif;
 }
 .content h1{
     color: #2a1958;
-margin-left: 8%;
+/* margin-left: 1%; */
 }
 .content h2{
     color: rgba(0, 0, 0, 0.87);
-    margin-left: 8%;
+    /* margin-left: 1%; */
+	width:100%;
 }
 .content .para{
     color: black;
-    margin-left: 8%;
+    /* margin-left: 1%; */
+	width:100%;
 }
 .content .btn{
     
@@ -152,12 +152,13 @@ margin-left: 8%;
     margin-left: 8%;
 
 }
-.content .para{
+/* .content .para{
     color: black;
+	margin:8%; */
 
-}
+/* } */
 .content .button{
-    margin: 0px -17px;
+    margin: 5px -45px;
     padding: 15px 45px; 
     border-radius: 10px; 
     border: none; 
@@ -166,7 +167,6 @@ margin-left: 8%;
 .content .btn1 {
     background-color: #2a1958;
     color:honeydew;
-  
 }
 .btn1:hover{
 	background-color:rgba(0, 0, 0, 0.87);
@@ -333,7 +333,9 @@ footer ul li{
     opacity: 60%;
   }
 
-
+.footerpart{
+	text-align: center;
+}
 
 
   
