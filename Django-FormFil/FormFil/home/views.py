@@ -9,5 +9,12 @@ def index(request):
     
 def about(request):
     return HttpResponse("this is about page")
+def login(request):
+    return render(request,"login.html")
+def signup(request):
+    return render(request,"signup.html")
 
-
+def contact_us(request):
+    return render(request,"contact-us.html")
+def about_us(request):
+    return render(request,"about_us.html")

@@ -1,0 +1,43 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'signup.css'%}">
+    <link rel="icon" type="image/x-icon" href="{% static '/img/crop_logo.png'%}" />
+</head>
+
+<body>
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <h4>Get started with your account</h4>
+        <form>
+            <label>First Name</label>
+            <input type="text">
+
+            <label>Last Name</label>
+            <input type="text">
+
+            <label>Email</label>
+            <input type="text">
+
+            <label>Password</label>
+            <input type="password">
+
+            <label>Confirm Password</label>
+            <input type="password">
+
+            <input type="button" value="Submit">
+        </form>
+        <p>By Clicking on Submit button, you agree to our<br>
+            <a href="#">Terms and Conditions</a> and <a href="#">privacy policy</a>
+        </p>
+    </div>
+    <p class="already">Already have an account?<a href="/login">Login here</a> </p>
+</body>
+
+</html>
