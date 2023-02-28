@@ -7,22 +7,24 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>Home-FormFil</title>
 	<link rel="stylesheet" href="style/style.css" />
-     <link rel="stylesheet" href="style/theme.css">
+
+    <link rel="stylesheet" href="style/theme.css">
+    <link rel="stylesheet" href="style/landing.css">
+
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-     
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
-	<link rel="icon" type="image/x-icon" href="./img/crop_logo.png" />
+	<link rel="icon" type="image/x-icon" href="/fevicon.png" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
-     
-    <div class="loader">
-          <img class= "imgload" src="img/logo.png"  alt="">
-     </div>
+
+     <!-- <div class="loader"> -->
+          <!-- <img class= "imgload" src="img/logo.png"  alt=""> -->
+     <!-- </div> -->
 
 	<div class="main">
 		<!-- Navigation bar -->
@@ -41,7 +43,7 @@
 				</div>
 				<li><a href="pages/about_us.html">ABOUT US </a></li>
 				<li><a href="pages/contact-us.html">CONTACT US </a></li>
-        <!--<li><a href="testimonial.html">TESTIMONIAL</a></li>-->
+                    <li><a href="pages/testimonial.html">TESTIMONIAL</a></li>
 				<li><a href="pages/login.html" class="lgn">LOGIN</a></li>
 
        
@@ -98,7 +100,7 @@
                       </li>
                            
                       <li>
-                        <p> codervivek5@gmail.com</p>
+                        <p>info@gmail.com</p>
                       </li>
                  </ul>
             </div>
@@ -208,35 +210,177 @@
 			icon.src="img/moon.png";
 		}
 	}
-  //javascript for loader
-  $(document).ready(function() {
-      // Animate loader off screen
-   setTimeout(function() {
-    $(".loader").fadeOut("slow");
-   }, 0);
+     // Javascript Code for Scroll to top Button
+     const showOnPx = 100;
+     const backToTopButton = document.querySelector(".back-to-top")
+    
+    const scrollContainer = () => {
+      return document.documentElement || document.body;
+     };
+
+document.addEventListener("scroll", () => {
+  if (scrollContainer().scrollTop > showOnPx) {
+    backToTopButton.classList.remove("hidden")
+  } else {
+    backToTopButton.classList.add("hidden")
+  }
+})
+const goToTop = () => {
+  document.body.scrollIntoView({
+    behavior: "smooth",
   });
-      // Javascript Code for Scroll to top Button
-      const showOnPx = 100;
-      const backToTopButton = document.querySelector(".back-to-top")
-     
-     const scrollContainer = () => {
-       return document.documentElement || document.body;
-      };
- 
- document.addEventListener("scroll", () => {
-   if (scrollContainer().scrollTop > showOnPx) {
-     backToTopButton.classList.remove("hidden")
-   } else {
-     backToTopButton.classList.add("hidden")
-   }
- })
- const goToTop = () => {
-   document.body.scrollIntoView({
-     behavior: "smooth",
-   });
- };
- backToTopButton.addEventListener("click", goToTop);      
+};
+backToTopButton.addEventListener("click", goToTop);
 
 </script>
+
+
+	<div class="main">
+		<!-- Navigation bar -->
+
+		<div class="navbar">
+			<a href="index.html"><img class="logo" src="img/logo.png" /></a>
+			<ul>
+				<li><a href="index.html" class="active">HOME</a></li>
+				<div class="dropdown">
+					<li><a href="#">SERVICE </a></li>
+					<div class="dropdown-content">
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+				<li><a href="pages/about_us.html">ABOUT US </a></li>
+				<li><a href="pages/contact-us.html">CONTACT US </a></li>
+				<li><a href="pages/login.html" class="lgn">LOGIN</a></li>
+			</ul>
+		</div>
+
+		<!-- Navigation bar -->
+
+		<div class="container">
+			<div class="content">
+				<h1>FORM FILL</h1>
+				<h2>The Digital Cyber Cafe</h2>
+				<p class="para">
+					<p>Online form filling</p>
+					<p>Filling all Exams Forms (College admissions, Scholarship forms..etc)</p>
+					<p>Online payment mode</p>
+					<p>Apply for Driving License (Learning and Permanent)</p>
+					<p>Apply for PAN card, Aadhaar Card</p>
+					<p>Filling the College Admission Form</p>
+					<p>Apply for Govt. Naukri Forms</p>
+				</p>
+				<div class="btn">
+					<a href="pages/signup.html"> <button class="btn1 button">REGISTER</button></a>
+				</div>
+			</div>
+			<div class="shipp">
+				<img src="img/svg.svg" />
+			</div>
+		</div>
+	</div>
+
+	<!-- footer section -->
+	<div class="footer">
+
+		<section>
+			<!-- Left -->
+			<div class="footerpart" style="color: white; padding:12px 0px 0px 18px    ">
+				<h4> Get connected with us on social networks:</h4>
+			</div>
+		</section>
+		<hr>
+		<!-- Links -->
+		<section class="linkss">
+
+			<!-- Grid row -->
+			<div class="row mt-3">
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+					<!-- Content -->
+					<h6 class="text-uppercase fw-bold mb-4">
+						<i class=""></i>ABOUT US
+					</h6>
+					<p>
+						Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem mollitia porro nostrum enim
+						quasi, totam officiis consequuntur tempore ea ipsam, tenetur qui delectus consectetur, explicabo
+						pariatur error libero sapiente placeat a illo deserunt provident ex. Id earum eveniet veniam
+						non!
+					</p>
+				</div>
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+					<!-- Links -->
+					<h6 class="text-uppercase fw-bold mb-4">
+						Privacy Policy
+					</h6>
+					<p>
+						<a href="#!" class="text-reset">Angular</a>
+					</p>
+					<p>
+						<a href="#!" class="text-reset">React</a>
+					</p>
+					<p>
+						<a href="#!" class="text-reset">Vue</a>
+					</p>
+					<p>
+						<a href="#!" class="text-reset">Laravel</a>
+					</p>
+				</div>
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+					<!-- Links -->
+					<h6 class="text-uppercase fw-bold mb-4">
+						Useful links
+					</h6>
+					<p>
+						<a href="#!" class="text-reset">Pricing</a>
+					</p>
+					<p>
+						<a href="#!" class="text-reset">Settings</a>
+					</p>
+					<p>
+						<a href="#!" class="text-reset">Orders</a>
+					</p>
+					<p>
+						<a href="#!" class="text-reset">Help</a>
+					</p>
+				</div>
+				<!-- Grid column -->
+
+				<!-- Grid column -->
+				<div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+					<!-- Links -->
+					<h6 class="text-uppercase fw-bold mb-4">
+						Contact
+					</h6>
+					<p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+					<p>
+						<i class="fas fa-envelope me-3"></i>
+						info@example.com
+					</p>
+					<p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+					<p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+				</div>
+				<!-- Grid column -->
+			</div>
+			<!-- Grid row -->
+	</div>
+
+	<div class="copy">
+
+		© 2021 Copyright: <a href="index.html"> FORM FIL
+		</a>
+	</div>
+	</section>
+	<!-- Copyright -->
+	</div>
+
 </body>
+
 </html>
