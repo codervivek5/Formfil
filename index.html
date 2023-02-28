@@ -21,7 +21,7 @@
 	<div class="main">
 		<!-- Navigation bar -->
 
-		<div class="navbar">
+		<div class="navbar navbar-fixed-top navbar-scrolled">
 			<a href="index.html"><img class="logo" src="img/logo.png" /></a>
 			<ul>
 				<li><a href="index.html" class="active">HOME</a></li>
@@ -163,6 +163,27 @@
 	</section>
 	<!-- Copyright -->
 	</div>
+
+	<script>
+
+		const navEL = document.querySelector('.navbar');
+		window.addEventListener('scroll',() => {
+		  if (window.scrollY >=56){
+			navEL.classList.add('navbar-scrolled');  
+		  } else if(window.scrollY<56){
+			navEL.classList.remove('navbar-scrolled');
+		  }
+  
+		});
+  
+  
+	  </script>
+
+
+
+
+
+
 </body>
 
 </html>

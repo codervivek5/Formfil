@@ -4,6 +4,10 @@ body{
 	background:black;
 font-family: 'Times New Roman', Times, serif;
 }
+
+html{
+  scroll-behavior: smooth;
+}
 .main{
 	position: relative;
 	height:100vh;
@@ -12,13 +16,13 @@ font-family: 'Times New Roman', Times, serif;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity: 0.8;
-	
+	opacity: 0.8;	
 }
+
 .main .navbar{
-	position: absolute;
-	height:16%;
-	width:99%;
+	position: fixed;
+	height:12%;
+	width:100%;
 	/* background-color: rgba(143, 135, 132, 0.274); */
 }
 
@@ -87,7 +91,17 @@ font-family: 'Times New Roman', Times, serif;
 	color:#fff;
 	font-weight:200;
 }
-.img{ margin-left: 63%;
+
+.main .navbar{
+    transition: all 0.5s ease;  
+  }
+  
+ .main .navbar-scrolled{
+     background-color:rgb(91, 91, 235);
+  }
+   
+.img{ 
+    margin-left: 63%;
 }
 
   .dropdown {
@@ -120,6 +134,7 @@ font-family: 'Times New Roman', Times, serif;
     /* ____________________________________________________________________________________________________________ */
 
 .container{
+    background-attachment: scroll;
     display: flex;
     justify-content: space-between;
     align-items: center;
