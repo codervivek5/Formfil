@@ -19,7 +19,7 @@ font-family: 'Times New Roman', Times, serif;
 }
 .main .navbar{
     Position:fixed;
-	height:16%;
+	height:12%;
 	width:99%;
 	/* background-color: rgba(143, 135, 132, 0.274); */
 }
@@ -46,6 +46,8 @@ font-family: 'Times New Roman', Times, serif;
 	float:right;
 }
 .main .navbar ul li{
+    margin-top: 20px;
+    margin-right: 10px;
 	list-style-type: none;
 	display: inline-block;
 }
@@ -85,7 +87,7 @@ font-family: 'Times New Roman', Times, serif;
   }
   
   .navbar-scrolled{
-      background-color:#4615cb;
+      background-color:#2a1958;
   }
   
 .main .navbar ul li a:hover:before,
