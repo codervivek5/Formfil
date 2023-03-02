@@ -27,7 +27,7 @@
 	<div class="main">
 		<!-- Navigation bar -->
 
-		<div class="navbar">
+		<div class="navbar navbar-fixed-top ">
 			<a href="home.html"><img class="logo" src="../img/logo.png" /></a>
 			<ul>
 				<li><a href="home.html" class="active">HOME</a></li>
@@ -232,8 +232,20 @@
      behavior: "smooth",
    });
  };
- backToTopButton.addEventListener("click", goToTop);      
+ backToTopButton.addEventListener("click", goToTop);  
+ 
+ 
+ const navEL = document.querySelector('.navbar');
+      window.addEventListener('scroll',() => {
+        if (window.scrollY >=46){
+          navEL.classList.add('navbar-scrolled');  
+        } else if(window.scrollY<46){
+          navEL.classList.remove('navbar-scrolled');
+        }
+
+      });
 
 </script>
+<
 </body>
 </html>

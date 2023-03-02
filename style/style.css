@@ -18,7 +18,7 @@ font-family: 'Times New Roman', Times, serif;
 	
 }
 .main .navbar{
-	position: absolute;
+    Position:fixed;
 	height:16%;
 	width:99%;
 	/* background-color: rgba(143, 135, 132, 0.274); */
@@ -79,6 +79,15 @@ font-family: 'Times New Roman', Times, serif;
 	bottom:0;
 	transition: 0.5s ease-in-out width;
 }
+
+.navbar{
+    transition: all 0.5s;  
+  }
+  
+  .navbar-scrolled{
+      background-color:#4615cb;
+  }
+  
 .main .navbar ul li a:hover:before,
 .main .navbar ul li a.active:before{
 	width:100%;
