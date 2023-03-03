@@ -7,7 +7,7 @@
 	--color--btn: #2a1958;
 	--color--nav: black;
 	--color--nav_before:#2a1958;
-	
+	--color--customnav: white;
 }
 .dark-mode{
 	--color--main: linear-gradient(#4b075ac4,rgba(28, 1, 41, 0.712)); 
@@ -18,7 +18,7 @@
 	--color--btn: #130735;
 	--color--nav: rgb(215, 244, 248);
 	--color--nav_before:rgb(215, 244, 248);
-
+	--color--customnav: rgb(174, 147, 180);
 }
 #icon{
 	width: 30px;
@@ -33,18 +33,18 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	opacity: 0.8;
-	
+	opacity: 0.8;	
 }
-.main .navbar ul li a:before{
-	position: absolute;
-	content: '';
-	height:2px;
-	width:0;
-	background:var(--color--nav_before);
-	left:0;
-	bottom:0;
-	transition: 0.5s ease-in-out width;
+.navbar{
+	background-color: var(--color--customnav);
+}
+
+.nav-link{
+	color: var(--color--p) !important;
+}
+
+.active{
+	color: blueviolet !important;
 }
 .content h1{
     color:var(--color--h1);

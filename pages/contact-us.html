@@ -19,33 +19,34 @@
 </head>
 
 <body>
+
   <div class="main">
     <!-- ----------------------Navigation bar---------------------- -->
-
-    <div class="navbar">
-
-      <a href="../index.html"><img class="logo" src="../img/logo.png" /></a>
-
-
-      <ul id="navbarmain">
-        <li><a href="../index.html">HOME</a></li>
-        <div class="dropdown">
-          <li><a href="service.html">SERVICE </a></li>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
-        </div>
-        <li><a href="../pages/about_us.html">ABOUT US </a></li>
-        <li><a href="../pages/contact-us.html" class="active">CONTACT US </a></li>
-        <li><a href="../pages/login.html" class="lgn">LOGIN</a></li>
-        <li><a href="../pages/project.html">CART </a></li>
+    <header class="navbar">
+      <a href="index.html"><img class="logo" src="../img/logo.png" width="100px" height="100px" /></a>
+  
+      <div class="navbar-opt">
+        <ul class="navbar-list">
+          <li><a href="../index.html" class="nav-link">HOME</a></li>
+          <li><a href="../pages/service.html" class="nav-link">SERVICE </a></li>
+          <li><a href="../pages/about_us.html" class="nav-link">ABOUT US </a></li>
+          <li><a href="../pages/contact-us.html" class="nav-link active">CONTACT US </a></li>
+          <li><a href="../pages/testimonial.html" class="nav-link">TESTIMONIAL</a></li>
+          <li><a href="../pages/cart.html" class="nav-link">CART</a></li>
+        </ul>
+      </div>
+  
+      <div class="fixed-buttons">
+        <button><a href="../pages/login.html" class="lgn">LOGIN</a></button>
         <img src="../img/moon.png" id="icon">
-
-      </ul>
-    </div>
-
+      </div>
+  
+      <div class="mobile-menu">
+        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+        <ion-icon name="close-outline" class="menu-icon"></ion-icon>
+      </div>
+  
+     </header>
 
 
     <!-- --------------------------------------------------- -->
@@ -101,8 +102,8 @@
   </div>
   </div>
 
-
-</body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <!-- footer -->
 <footer>
   <div>
@@ -199,7 +200,28 @@
      </div> 
   </div>
 </footer>
+<script>
+	var icon = document.getElementById("icon");
+	icon.onclick = function(){
+		document.body.classList.toggle("dark-mode");
+		if (document.body.classList.contains("dark-mode")){
+			icon.src="../img/sun.png";
+		}
+		else {
+			icon.src="../img/moon.png";
+		}
+	}
 
+const mobile_nav= document.querySelector('.mobile-menu');
+const nav_header= document.querySelector(".navbar");
+
+const toggleNav = () =>{
+  nav_header.classList.toggle("switchOn");
+}
+
+mobile_nav.addEventListener('click', () => toggleNav());
+  </script>
+</body>
 
 
 
