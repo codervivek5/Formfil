@@ -148,3 +148,10 @@ body{
     text-decoration: none;
     font-size: 15px;
 }
+
+.social div{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    margin-left: 20px;
+  }

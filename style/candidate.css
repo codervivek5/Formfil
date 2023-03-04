@@ -99,3 +99,10 @@ p{
     box-shadow:3px 3px 6px #38373785;
     transition:.5s
 }
+
+.social div{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    margin-left: 20px;
+  }

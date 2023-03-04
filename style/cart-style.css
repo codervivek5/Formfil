@@ -114,3 +114,9 @@ font-family: "Poppins", sans-serif;
     color:honeydew;
 }
    
+.social div{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    margin-left: 20px;
+  }
