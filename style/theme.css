@@ -76,5 +76,8 @@ margin-left: 8%;
 	display: flex;
 	flex-direction: column !important;
 	justify-content: center;
-	margin-left: 20px;
+	margin-left: 30px;
   }
+.social li {
+	padding: 10px;
+}  
