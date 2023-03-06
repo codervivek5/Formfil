@@ -24,6 +24,7 @@
     width: 100%;
     padding: 0 1em 1em 1em;
     text-align: center;
+    justify-content: center;
   }
   .card {
     width: 90%;
@@ -114,28 +115,32 @@
     padding: auto;
   }
 
-  @media screen and (max-width:950px){
+  @media screen and (max-width:970px){
     footer{
-      padding-top: 90px;
+      padding-top: 160px;
+    }
+    .section-heading{
+      padding-top: 50px;
+      padding-bottom: 80px;
     }
   }
   @media screen and (max-width:780px){
     footer{
-      padding-top: 160px;
+      padding-top: 230px;
     }
   }
   @media screen and (max-width:770px){
     footer{
-      padding-top: 95%;
+      padding-top: 130%;
     }
   }
   @media screen and (max-width:660px){
     footer{
-      padding-top: 130%;
+      padding-top: 160%;
     }
   }
   @media screen and (max-width:490px){
     footer{
-      padding-top: 180%;
+      padding-top: 220%;
     }
   }
