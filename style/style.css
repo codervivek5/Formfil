@@ -430,6 +430,13 @@ footer ul li{
     transition: all 1s ease;
     -webkit-transition: all 1s ease;
 }
+.social div{
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  margin-left: 30px;
+}
+
 .back-to-top {
     position: fixed;
     right: 2rem;

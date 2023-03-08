@@ -301,7 +301,14 @@ footer{
 ul{
     text-align: justify;
     padding: 10px;
-  }	       
+  }	  
+  
+  .social div{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    margin-left: 30px;
+  }
 
 
  
