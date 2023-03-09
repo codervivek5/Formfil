@@ -71,3 +71,13 @@ margin-left: 8%;
 	height: 40vh;
 	
 }
+
+.social div{
+	display: flex;
+	flex-direction: column !important;
+	justify-content: center;
+	margin-left: 30px;
+  }
+.social li {
+	padding: 10px;
+}  

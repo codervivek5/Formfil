@@ -538,6 +538,14 @@ footer ul li {
   -webkit-transition: all 1s ease;
 }
 
+.social div{
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  margin-left: 30px;
+}
+
+
 .back-to-top {
   position: fixed;
   right: 2rem;
@@ -617,6 +625,19 @@ footer ul li {
 .fadeInRight {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
+}
+@-webkit-keyframes fadeIn {
+  0% {
+     opacity: 0;
+  }
+  100% {
+     opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }
 
 .dark-mode btn {

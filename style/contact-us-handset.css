@@ -72,3 +72,10 @@ footer {
         margin-top: 32pc;
     }
 }
+
+.social div{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    margin-left: 30px;
+  }

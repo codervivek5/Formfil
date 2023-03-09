@@ -22,6 +22,7 @@
   <div class="main">
 		<!-- Navigation bar -->
 
+
 		<header style="display: flex; align-items: center; justify-content: center">
       <nav class="navbar">
         <a href="../index.html"
@@ -53,13 +54,14 @@
         </div>
       </nav>
     </header>
+
   <section>
     <div class="row">
       <h2 class="section-heading">Our Services</h2>
     </div>
-    <div class="row">
+    <div class="row row2">
       <div class="column">
-        <div class="card">
+        <div class="card animated fadeInLeft">
           <div class="icon-wrapper">
             <i class="fas fa-hammer"></i>
           </div>
@@ -71,7 +73,7 @@
         </div>
       </div>
       <div class="column">
-        <div class="card">
+        <div class="card animated fadeIn">
           <div class="icon-wrapper">
             <i class="fas fa-brush"></i>
           </div>
@@ -83,7 +85,7 @@
         </div>
       </div>
       <div class="column">
-        <div class="card">
+        <div class="card animated fadeInRight">
           <div class="icon-wrapper">
             <i class="fas fa-wrench"></i>
           </div>
@@ -95,7 +97,7 @@
         </div>
       </div>
       <div class="column">
-        <div class="card">
+        <div class="card animated fadeInLeft">
           <div class="icon-wrapper">
             <i class="fas fa-truck-pickup"></i>
           </div>
@@ -107,11 +109,11 @@
         </div>
       </div>
       <div class="column">
-        <div class="card">
+        <div class="card animated fadeIn">
           <div class="icon-wrapper">
             <i class="fas fa-broom"></i>
           </div>
-          <h3>DRIVING License</h3>
+          <h3>DRIVING LICENSE</h3>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam
             consequatur necessitatibus eaque.
@@ -119,7 +121,7 @@
         </div>
       </div>
       <div class="column">
-        <div class="card">
+        <div class="card animated fadeInRight">
           <div class="icon-wrapper">
             <i class="fas fa-plug"></i>
           </div>
@@ -160,19 +162,19 @@
                    </li>
                         
                    <li>
-                      <a href="#">Service 2</a>
+                      <a href="#">Create Voter ID </a>
                    </li>
                         
                    <li>
-                     <a href="#">Service 3</a>
+                     <a href="#">Digital PAN card</a>
                    </li>
                         
                    <li>
-                      <a href="#">Service 4 </a>
+                      <a href="#">Application Submission </a>
                    </li>
                         
                    <li>
-                     <a href="#">Service 5</a>
+                     <a href="#">Xerox Copy</a>
                   </li>
              </ul>
          </div>
@@ -203,7 +205,7 @@
      
           <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
              <ul class="social">
-                  <span>Social</span>    
+                  <span>Social</span> <div>   
                   <li>
                        <a href="https://www.facebook.com/codervivek"  target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
                   </li>
@@ -223,6 +225,7 @@
                   <li>
                        <a href="https://www.youtube.com/codervivek" target="_blank"><i class="fa fa-youtube-play fa-2x"></i></a>
                  </li>
+                 </div>
                 </ul>
           </div>
      </div> 
@@ -252,10 +255,10 @@ var icon = document.getElementById("icon");
 icon.onclick = function(){
   document.body.classList.toggle("dark-mode");
   if (document.body.classList.contains("dark-mode")){
-    icon.src="img/sun.png";
+    icon.src="../img/sun.png";
   }
   else {
-    icon.src="img/moon.png";
+    icon.src="../img/moon.png";
   }
 }
 //javascript for loader
