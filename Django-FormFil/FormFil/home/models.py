@@ -5,7 +5,15 @@ from distutils.command.upload import upload
 import email
 from email.policy import default
 from unittest.util import _MAX_LENGTH
+from django.contrib.auth.models import AbstractUser
+
 # Create your models here.
+
+# class User(AbstractUser):
+#     FirstName=models.TextField('FirstName',default='')
+    # LastName=models.TextField('lname',default='',blank=True)
+    
+    
 
 class contactdetails(models.Model):
     name = models.TextField('name',max_length=200)
