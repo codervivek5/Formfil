@@ -1,11 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   margin: 0;
   padding: 0;
   background: black;
   font-family: 'Times New Roman', Times, serif;
   overflow-x: hidden;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar {
+  width: 0.9rem;
+  background-color:var(--color--customnav);
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(90, 34, 139, 0.7) !important;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a19fad;
 }
 
 .main {
