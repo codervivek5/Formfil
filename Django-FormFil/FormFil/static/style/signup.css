@@ -33,7 +33,7 @@ input{
     border:1px solid grey;
     border-radius: 5px;
 }
-input[type="button"]{
+input[type="submit"]{
     width:315px;
     height:35px;
     margin-top:20px;
