@@ -22,31 +22,39 @@
   <div class="main">
 		<!-- Navigation bar -->
 
-    <header class="navbar">
-      <a href="../index.html"><img class="logo" src="../img/logo.png" width="100px" height="100px" /></a>
 
-      <div class="navbar-opt">
+		<header style="display: flex; align-items: center; justify-content: center">
+      <nav class="navbar">
+        <a href="../index.html"
+          ><img class="logo" src="../img/logo.png" width="100px" height="100px"
+        /></a>
+
         <ul class="navbar-list">
-          <li><a href="../index.html" class="nav-link">HOME</a></li>
-          <li><a href="./service.html" class="nav-link active">SERVICE </a></li>
-          <li><a href="./about_us.html" class="nav-link">ABOUT US </a></li>
-          <li><a href="./contact-us.html" class="nav-link">CONTACT US </a></li>
-          <li><a href="./testimonial.html" class="nav-link">TESTIMONIAL</a></li>
-          <li><a href="./cart.html" class="nav-link">CART</a></li>
+          <li><a href="../index.html" class="nav-link ">HOME</a></li>
+          <li><a href="../pages/service.html" class="nav-link active">SERVICE </a></li>
+          <li>
+            <a href="../pages/about_us.html" class="nav-link">ABOUT US </a>
+          </li>
+          <li>
+            <a href="../pages/contact-us.html" class="nav-link">CONTACT US </a>
+          </li>
+          <li>
+            <a href="../pages/testimonial.html" class="nav-link">TESTIMONIAL</a>
+          </li>
+          <li><a href="../pages/cart.html" class="nav-link">CART</a></li>
         </ul>
-      </div>
 
-      <div class="fixed-buttons">
-        <button><a href="../pages/login.html" class="lgn">LOGIN</a></button>
-        <img src="../img/moon.png" id="icon">
-      </div>
+        <div class="fixed-buttons">
+          <button><a href="../pages/login.html" class="lgn">LOGIN</a></button>
+          <img src="../img/moon.png" id="icon" />
+        </div>
+        <div class="mobile-menu">
+          <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+          <ion-icon name="close-outline" class="menu-icon"></ion-icon>
+        </div>
+      </nav>
+    </header>
 
-      <div class="mobile-menu">
-        <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-        <ion-icon name="close-outline" class="menu-icon"></ion-icon>
-      </div>
-
-     </header>
   <section>
     <div class="row">
       <h2 class="section-heading">Our Services</h2>
