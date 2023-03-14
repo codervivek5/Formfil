@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Testimonial</title>
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="stylesheet" href="../style/swiper-bundle.min.css">
+
     <link rel="stylesheet" href="../style/testimonial.css">
     
     <link rel="stylesheet" href="../style/theme.css">
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>-->
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
@@ -21,43 +23,51 @@
 </head>
 
 <body>
-
-    <header class="navbar">
-        <a href="index.html"><img class="logo" src="../img/logo.png" width="100px" height="100px" /></a>
-    
-        <div class="navbar-opt">
-          <ul class="navbar-list">
-            <li><a href="../index.html" class="nav-link">HOME</a></li>
-            <li><a href="../pages/service.html" class="nav-link">SERVICE </a></li>
-            <li><a href="../pages/about_us.html" class="nav-link">ABOUT US </a></li>
-            <li><a href="../pages/contact-us.html" class="nav-link">CONTACT US </a></li>
-            <li><a href="../pages/testimonial.html" class="nav-link active">TESTIMONIAL</a></li>
-            <li><a href="../pages/cart.html" class="nav-link">CART</a></li>
-          </ul>
-        </div>
-    
-        <div class="fixed-buttons">
-          <button><a href="../pages/login.html" class="lgn">LOGIN</a></button>
-          <img src="../img/moon.png" id="icon">
-        </div>
-    
-        <div class="mobile-menu">
-          <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
-          <ion-icon name="close-outline" class="menu-icon"></ion-icon>
-        </div>
-    
-       </header>
-
     <div class="main">
-        <button id="prev">&lt;</button>
-        <div class="testimonial">
-            <div class="t-content" id="t-content">
+		<!-- Navigation bar -->
 
-            </div>
-        </div>
-        <button id="next">&gt;</button>
-    </div> 
+		<header style="display: flex; align-items: center; justify-content: center">
+            <nav class="navbar">
+              <a href="../index.html"
+                ><img class="logo" src="../img/logo.png" width="100px" height="100px"
+              /></a>
+      
+              <ul class="navbar-list">
+                <li><a href="../index.html" class="nav-link ">HOME</a></li>
+                <li><a href="../pages/service.html" class="nav-link">SERVICE </a></li>
+                <li>
+                  <a href="../pages/about_us.html" class="nav-link">ABOUT US </a>
+                </li>
+                <li>
+                  <a href="../pages/contact-us.html" class="nav-link">CONTACT US </a>
+                </li>
+                <li>
+                  <a href="../pages/testimonial.html" class="nav-link active">TESTIMONIAL</a>
+                </li>
+                <li><a href="../pages/cart.html" class="nav-link">CART</a></li>
+              </ul>
+      
+              <div class="fixed-buttons">
+                <button><a href="../pages/login.html" class="lgn">LOGIN</a></button>
+                <img src="../img/moon.png" id="icon" />
+              </div>
+              <div class="mobile-menu">
+                <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+                <ion-icon name="close-outline" class="menu-icon"></ion-icon>
+              </div>
+            </nav>
+          </header>
+
+          <div class="testimonial-main">
+            <button id="prev">&lt;</button>
+            <div class="testimonial">
+                <div class="t-content" id="t-content">
     
+                </div>
+            </div>
+            <button id="next">&gt;</button>
+        </div> 
+
       <!-- footer section -->
 <div class="space">
       <footer>
@@ -80,26 +90,28 @@
             </div>
             <div class="col-lg-3 col-md-5 col-sm-4 col-xs-12">
                <ul class="service">
-                    <span>Services</span>    
+                    <span>Services</span>   
+                    <div>
                     <li>
                        <a href="#">DigitalMarket Service</a>
                      </li>
                           
                      <li>
-                        <a href="#">Service 2</a>
+                        <a href="#">Create Voter ID </a>
                      </li>
                           
                      <li>
-                       <a href="#">Service 3</a>
+                       <a href="#">Digital PAN card</a>
                      </li>
                           
                      <li>
-                        <a href="#">Service 4 </a>
+                        <a href="#">Application Submission </a>
                      </li>
                           
                      <li>
-                       <a href="#">Service 5</a>
+                       <a href="#">Xerox Copy</a>
                     </li>
+                </div>
                </ul>
            </div>
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
@@ -129,25 +141,25 @@
        
             <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
                <ul class="social">
-                    <span>Social</span>    
+                    <span>Social</span> <div>   
                     <li>
-                         <a href="https://www.facebook.com/codervivek"  target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                         <a href="https://www.facebook.com/codervivek"  target="_blank"><i style="transform: scale(1.5,1.4);" class="fa  fa-facebook fa-x"></i></a>
                     </li>
                    
                     <li>
-                         <a href="https://github.com/codervivek5" target="_blank"><i class="fa fa-github fa-2x"></i></a>
+                         <a href="https://github.com/codervivek5" target="_blank"><i style="transform: scale(1.5,1.4);" class="fa  fa-github fa-x"></i></a>
                     </li>
                      
                     <li>
-                         <a href="https://www.linkedin.com/in/codervivek/" target="_blank"><i class="fa fa-linkedin fa-2x"></i></a>
+                         <a href="https://www.linkedin.com/in/codervivek/" target="_blank"><i style="transform: scale(1.5,1.4);" class="fa  fa-linkedin fa-x"></i></a>
                     </li>
                     
                     <li>
-                         <a href="https://twitter.com/codervivek5" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                         <a href="https://twitter.com/codervivek5" target="_blank"><i style="transform: scale(1.5,1.4);" class="fa  fa-twitter fa-x"></i></a>
                     </li>
                      
                     <li>
-                         <a href="https://www.youtube.com/codervivek" target="_blank"><i class="fa fa-youtube-play fa-2x"></i></a>
+                         <a href="https://www.youtube.com/codervivek" target="_blank"><i style="transform: scale(1.5,1.4);" class="fa  fa-youtube-play fa-x"></i></a>
                    </li>
                   </ul>
             </div>
@@ -169,31 +181,11 @@
      />
    </svg></button>
   </footer>
-
-  <script>
-    	var icon = document.getElementById("icon");
-	icon.onclick = function(){
-		document.body.classList.toggle("dark-mode");
-		if (document.body.classList.contains("dark-mode")){
-			icon.src="../img/sun.png";
-		}
-		else {
-			icon.src="../img/moon.png";
-		}
-	}
-
-    const mobile_nav= document.querySelector('.mobile-menu');
-const nav_header= document.querySelector(".navbar");
-
-const toggleNav = () =>{
-  nav_header.classList.toggle("switchOn");
-}
-
-mobile_nav.addEventListener('click', () => toggleNav());
-  </script>
-
-<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-<script src="../scripts/testimonial.js"></script>
+</div>
+    
 </body>
+
+<script src="../scripts/swiper-bundle.min.js"></script>
+<script src="../scripts/testimonial.js"></script>
+
 </html>

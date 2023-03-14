@@ -154,3 +154,10 @@ letter-spacing: 3px;
  margin-right: 15px;
  font-size:14px;
 }
+
+.social div{
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  margin-left: 30px;
+}

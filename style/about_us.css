@@ -64,3 +64,10 @@ section {
   background-color: #d1d1d0;
   
 }
+
+.social div{
+  display: flex;
+  flex-direction: column !important;
+  justify-content: center;
+  margin-left: 30px;
+}

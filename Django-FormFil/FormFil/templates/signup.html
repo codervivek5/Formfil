@@ -1,3 +1,4 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,23 +15,24 @@
     <div class="signup-box">
         <h1>Sign Up</h1>
         <h4>Get started with your account</h4>
-        <form>
-            <label>First Name</label>
-            <input type="text">
+        <form action='/signup/'  method="POST"> {% csrf_token %}
+            <label for="fname">First Name</label>
+          <input type="text" id="fname" name="fname" placeholder="Your first name" required>
 
-            <label>Last Name</label>
-            <input type="text">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lname" placeholder="Your last name" required>
 
-            <label>Email</label>
-            <input type="text">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" placeholder="Your E-mail" required>
 
-            <label>Password</label>
-            <input type="password">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Password" required>
 
-            <label>Confirm Password</label>
-            <input type="password">
+          
+          <label for="cnfpassword">Confirm Password</label>
+          <input type="cnfpassword" id="cnfpassword" name="cnfpassword" placeholder="Confirm Password" required>
 
-            <input type="button" value="Submit">
+            <input type="submit" onclick="signup();" value="Submit">
         </form>
         <p>By Clicking on Submit button, you agree to our<br>
             <a href="#">Terms and Conditions</a> and <a href="#">privacy policy</a>
