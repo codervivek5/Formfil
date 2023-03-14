@@ -25,6 +25,13 @@
 	cursor: pointer;
 	margin: 10px;
 }
+
+.slide p{
+	color: var(--color--p);
+	text-align: center;
+	padding: 2rem;
+}
+
 .main{
 	position: relative;
 	height:100vh;
