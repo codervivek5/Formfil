@@ -24,12 +24,12 @@
 .slide-container h3{
     color:black;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 3rem;
 }
 
 .slide-container h2{
     color:black;
-    font-size: 1.2rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -131,7 +131,7 @@
 }
 
 .button:hover{
-    background-color: rgb(5, 55, 5);
+    background-color: #0f0e31;
 }
 
 .swiper-navBtn{
