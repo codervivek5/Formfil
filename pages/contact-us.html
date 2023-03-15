@@ -7,40 +7,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact Us</title>
   <link rel="stylesheet" href="../style/contact-us.css">
+  <link rel="stylesheet" href="../style/theme.css">
+  <link rel="stylesheet" href="../style/style.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
-  <link rel="icon" type="image/x-icon" href="/fevicon.png" />
+  <link rel="icon" type="image/x-icon" href="../img/crop_logo.png" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" media="screen and (max-width: 1230px)" href="../style/contact-us-handset.css">
+
 </head>
 
 <body>
+
   <div class="main">
     <!-- ----------------------Navigation bar---------------------- -->
+    <header style="display: flex; align-items: center; justify-content: center">
+      <nav class="navbar">
+        <a href="../index.html"
+          ><img class="logo" src="../img/logo.png" width="100px" height="100px"
+        /></a>
 
-    <div class="navbar">
+        <ul class="navbar-list">
+          <li><a href="../index.html" class="nav-link ">HOME</a></li>
+          <li><a href="../pages/service.html" class="nav-link">SERVICE </a></li>
+          <li>
+            <a href="../pages/about_us.html" class="nav-link">ABOUT US </a>
+          </li>
+          <li>
+            <a href="../pages/contact-us.html" class="nav-link active">CONTACT US </a>
+          </li>
+          <li>
+            <a href="../pages/testimonial.html" class="nav-link">TESTIMONIAL</a>
+          </li>
+          <li><a href="../pages/cart.html" class="nav-link">CART</a></li>
+        </ul>
 
-      <a href="../index.html"><img class="logo" src="../img/logo.png" /></a>
-
-      <ul>
-        <li><a href="../index.html" class="active">HOME</a></li>
-
-        <div class="dropdown">
-          <li><a href="#">SERVICE </a></li>
-          <div class="dropdown-content">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-          </div>
+        <div class="fixed-buttons">
+          <button><a href="../pages/login.html" class="lgn">LOGIN</a></button>
+          <img src="../img/moon.png" id="icon" />
         </div>
-
-
-        <li><a href="pages/about_us.html">ABOUT US </a></li>
-        <li><a href="../pages/contact-us.html">CONTACT US </a></li>
-        <li><a href="../pages/login.html" class="lgn">LOGIN</a></li>
-
-      </ul>
-    </div>
-
+        <div class="mobile-menu">
+          <ion-icon name="menu-outline" class="menu-icon"></ion-icon>
+          <ion-icon name="close-outline" class="menu-icon"></ion-icon>
+        </div>
+      </nav>
+    </header>
 
 
     <!-- --------------------------------------------------- -->
@@ -51,152 +63,218 @@
         <div class="hh">
           <h1>Contact Us</h1>
         </div>
-        <p>If You Want To Contact us Then leave us a message:</p>
+        <p>Get in touch </p>
       </div>
 
-      <div class="row">
-        <div class="column">
-          <div class="con"> <img src="../img/undraw_two_factor_authentication_namy.svg" style="width:90%"></div>
 
+      <div class="row" id="box">
+        <div class="column" id="compimg">
+          <div class="con"> <img src="../img/undraw_two_factor_authentication_namy.svg" style="width:85%"></div>
         </div>
-
         <div class="column">
+          <div id="error"></div>
+          <form name="myForm" action="https://formsubmit.co/kecayay846@huvacliq.com" method="POST">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Your name" oninput="checkname();" required>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="Your email" oninput="checkemail();" required>
+            <label for="contact">Mobile Number</label>
+            <input type="number" id="contact" name="contact" placeholder="Your number" oninput="checkcontact();"
+              required>
 
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name">
-          <label for="lname">Email</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your email">
-          <label for="lname">Mobile Number</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your number">
-
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="India">India</option>
-            <option value="russia">Russia</option>
-            <option value="Ukrain">Ukrain</option>
-          </select>
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something" style="height:160px"></textarea>
-          <input type="submit" value="Submit">
-
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="India">India</option>
+              <option value="Ukrain">Bangladesh</option>
+              <option value="Ukrain">Pakistan</option>
+              <option value="Ukrain">China</option>
+              <option value="russia">Russia</option>
+              <option value="Ukrain">Ukrain</option>
+              <option value="Ukrain">England</option>
+              <option value="Ukrain">United State</option>
+              <option value="Ukrain">Other</option>
+            </select>
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write your thoughts" style="height:160px"></textarea>
+            <div id="button">
+              <input type="submit" value="Submit" id="submitdetails">
+            </div>
+          </form>
         </div>
       </div>
+
     </div>
   </div>
   </div>
 
-
-</body>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <!-- footer -->
-<div class="footer">
+<footer>
+  <div>
+      <div class="row">
+        <div class="col-lg-3 col-md-5 col-sm-4 col-xs-12">
+          <ul class="adress">
+               <span>Adress</span>    
+               <li>
+                  <p>Lorem ipsum dolor sit amet, vero omnis vocibus</p>
+                </li>
+                     
+                <li>
+                  <p>+90 1234 56789</p>
+                </li>
+                     
+                <li>
+                  <p>codervivek5@gmail.com</p>
+                </li>
+           </ul>
+      </div>
+      <div class="col-lg-3 col-md-5 col-sm-4 col-xs-12">
+         <ul class="service">
+              <span>Services</span>    
+              <li>
+                 <a href="#">DigitalMarket Service</a>
+               </li>
+                    
+               <li>
+                  <a href="#">Create Voter ID </a>
+               </li>
+                    
+               <li>
+                 <a href="#">Digital PAN card</a>
+               </li>
+                    
+               <li>
+                  <a href="#">Application Submission </a>
+               </li>
+                    
+               <li>
+                 <a href="#">Xerox Copy</a>
+              </li>
+         </ul>
+     </div>
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+        <ul class="contact">
+          <span>Contact</span>
+          <li>
+            <a href="../index.html">Home</a>
+          </li>
 
-  <section>
-    <!-- Left -->
-    <div class="" style="color: white; padding:12px 0px 0px 18px    ">
-      <h4> Get connected with us on social networks:</h4>
+          <li>
+            <a href="about_us.html">About</a>
+          </li>
+
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          
+          <li>
+            <a href="#">Gallery </a>
+          </li>
+          
+          <li>
+            <a href="contact-us.html">Contact us</a>
+          </li>
+        </ul>
+      </div>
+ 
+      <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12">
+        <ul class="social">
+           <span>Social</span> <div>   
+           <li>
+            <a href="https://www.facebook.com/codervivek" target="_blank"><i style="transform: scale(1.5,1.4);" class="fa  fa-facebook fa-2x"></i></a>
+       </li>
+      
+       <li>
+            <a href="https://github.com/codervivek5" target="_blank"><i style="transform: scale(1.5,1.4);" class="fa  fa-github fa-2x"></i></a>
+       </li>
+        
+       <li>
+            <a href="https://www.linkedin.com/in/codervivek/" target="_blank"><i style="transform: scale(1.5,1.4);" class="fa  fa-linkedin fa-2x"></i></a>
+       </li>
+       
+       <li>
+        <a href="https://twitter.com/codervivek5" target="_blank"><i style="transform: scale(1.5,1.4);" class="fa  fa-twitter fa-2x"></i></a>
+       </li>
+        
+       <li>
+        <a href="https://www.youtube.com/codervivek" target="_blank"><i style="transform: scale(1.5,1.4);" class="fa  fa-youtube-play fa-2x"></i></a>
+      </li>
+      </div>          
+         </ul>
     </div>
-  </section>
-  <hr>
-  <!-- Links -->
-  <section class="linkss">
+     </div> 
+  </div>
+</footer>
+<script>
+	var icon = document.getElementById("icon");
+	icon.onclick = function(){
+		document.body.classList.toggle("dark-mode");
+		if (document.body.classList.contains("dark-mode")){
+			icon.src="../img/sun.png";
+		}
+		else {
+			icon.src="../img/moon.png";
+		}
+	}
 
-    <!-- Grid row -->
-    <div class="row mt-3">
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-        <!-- Content -->
-        <h6 class="text-uppercase fw-bold mb-4">
-          <i class=""></i>ABOUT US
-        </h6>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem mollitia porro nostrum enim
-          quasi, totam officiis consequuntur tempore ea ipsam, tenetur qui delectus consectetur, explicabo
-          pariatur error libero sapiente placeat a illo deserunt provident ex. Id earum eveniet veniam
-          non!
-        </p>
-      </div>
-      <!-- Grid column -->
+const mobile_nav= document.querySelector('.mobile-menu');
+const nav_header= document.querySelector(".navbar");
 
-      <!-- Grid column -->
-      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-        <!-- Links -->
-        <h6 class="text-uppercase fw-bold mb-4">
-          Privacy Policy
-        </h6>
-        <p>
-          <a href="#" class="text-reset">Angular</a>
-        </p>
-        <p>
-          <a href="#" class="text-reset">React</a>
-        </p>
-        <p>
-          <a href="#" class="text-reset">Vue</a>
-        </p>
-        <p>
-          <a href="#" class="text-reset">Laravel</a>
-        </p>
-      </div>
-      <!-- Grid column -->
+const toggleNav = () =>{
+  nav_header.classList.toggle("switchOn");
+}
 
-      <!-- Grid column -->
-      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-        <!-- Links -->
-        <h6 class="text-uppercase fw-bold mb-4">
-          Useful links
-        </h6>
-        <p>
-          <a href="#" class="text-reset">Pricing</a>
-        </p>
-        <p>
-          <a href="#" class="text-reset">Settings</a>
-        </p>
-        <p>
-          <a href="#" class="text-reset">Orders</a>
-        </p>
-        <p>
-          <a href="#" class="text-reset">Help</a>
-        </p>
-      </div>
-      <!-- Grid column -->
-
-      <!-- Grid column -->
-      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-        <!-- Links -->
-        <h6 class="text-uppercase fw-bold mb-4">
-          Contact
-        </h6>
-        <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-        <p>
-          <i class="fas fa-envelope me-3"></i>
-          info@example.com
-        </p>
-        <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-        <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-      </div>
-      <!-- Grid column -->
-    </div>
-    <!-- Grid row -->
-</div>
-
-<div class="copy">
-
-  © 2021 Copyright: <a href="index.html"> FORM FIL
-  </a>
-
-
-</div>
-</section>
+mobile_nav.addEventListener('click', () => toggleNav());
+  </script>
+</body>
 
 
 
 
+<script>
+  function checkname() {
+    var name_in = document.querySelector("#fname")
+    console.log(name_in.value)
+    if (name_in.value.length > 10) {
+      name_in.setCustomValidity("Name is too long!")
+    }
+    else {
+      name_in.setCustomValidity("")
+    }
+  }
+  function checkemail() {
+    var em = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+    var email_in = document.querySelector("#email");
+    if (!(email_in.value.match(em))) {
+      email_in.setCustomValidity("Email is invalid!");
+    }
+    else {
+      email_in.setCustomValidity("");
+    }
+  }
+  function checkcontact() {
+    var phoneno = /^\d{10}$/;
+    var contact_in = document.querySelector("#contact");
+    if (!(contact_in.value.match(phoneno))) {
+      contact_in.setCustomValidity("Phone Number is invalid!");
+    }
+    else {
+      contact_in.setCustomValidity("");
+    }
+  }
+  const hamburger = document.querySelector(".hamburger");
 
+  const navbar = document.querySelector(".navbar");
 
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("activated");
+    navbar.classList.toggle("activated");
+  })
+</script>
 
 <!-- bootstrap scripts -->
-
+<script src="../darkmode.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 

@@ -1,0 +1,58 @@
+body{
+    background-color:#7b378ec4;
+    font-family:'Roboto','sans-serif';
+}
+.signup-box{
+    width:360px;
+    height:590px;
+    background-color: white;
+    margin:auto;
+    border-radius:10px;
+}
+h1{
+    text-align:center;
+    margin-top:25px;
+    padding-top: 10px;
+}
+h4{
+    text-align:center;
+}
+form{
+    width:300px;
+    margin-left:20px;
+}
+form label{
+    display:flex;
+    margin-top:15px;
+    font-size:18px;
+}
+input{
+    width:100%;
+    padding:7px;
+    border:none;
+    border:1px solid grey;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    width:315px;
+    height:35px;
+    margin-top:20px;
+    border:none;
+    background-color: #49c1a2;
+    color:white;
+    font-size: 18px;
+}
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+.already{
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    margin-top: -10px;
+}
+.already a{
+    color: #49c1a2;
+}

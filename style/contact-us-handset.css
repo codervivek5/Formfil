@@ -1,0 +1,81 @@
+body {
+    overflow-x: hidden;
+}
+
+.hh{
+    margin-top: 4.2pc;
+}
+
+.hamburger {
+    display: block;
+}
+
+.hamburger.activated {
+    background-color: #A273AF;
+}
+
+.hamburger.activated .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.activated .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.activated .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(135deg);
+}
+
+#compimg{
+    display: none;
+}
+
+#box {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.row .column {
+    float: left;
+    width: 85%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #33383c;
+    padding: 70px 0px;
+    margin-top: 60pc;
+    z-index: -100;
+}
+
+#button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width: 780px) {
+    footer {
+        background-color: #33383c;
+        padding: 70px 0px;
+        margin-top: 42pc;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    footer {
+        background-color: #33383c;
+        padding: 70px 0px;
+        margin-top: 32pc;
+    }
+}
+
+.social div{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    margin-left: 30px;
+  }

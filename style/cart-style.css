@@ -1,0 +1,159 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Poppins", sans-serif;
+}
+body{
+    background: linear-gradient(rgba(244, 245, 243, 0.712),rgb(148,0,211)) !important; 
+
+}
+.total{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    padding-bottom: 50px;
+}
+
+.cart{
+    border:3.5px solid;
+    padding: 2rem 10rem ;
+    border-radius: .5rem;
+    border-color:rgba(122,60,60,0.87);
+   background:linear-gradient(#fff,#cd8ddfc4);
+   margin: auto 0 !important;
+
+}
+
+.box1{
+    display: flex;
+    flex-direction: row;
+}
+.content h4{
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.order h2{
+    color: #2a1958;
+    font-size: 2rem !important;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.total p{
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+}
+
+.cart .box{
+    border:2px solid rgba(122,60,60,0.87);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* position: relative; */
+    padding: 30px;
+    margin: 0 40px;
+    border-radius: .2rem;
+    background:  linear-gradient(rgba(244, 245, 243, 0.712),#7b378ec4); 
+}
+
+.cart .box .content h3{
+       color: #2a1958;
+       font-size: 1.2rem;
+       padding-bottom: 1rem;
+}
+.content{
+    justify-content: center;
+    margin: auto 0 !important;
+}
+.cart .box .content span{
+    color:black;
+    font-size: 1.2rem;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.cart .box .content .quantity{
+    font-size: 1.1rem;
+}
+
+.cart .box img{
+    border-radius: 2.8rem;
+    border-color:red;
+}
+
+.cart .total{
+    font-size: 1.4rem;
+    padding: .4rem 0;
+    color: black;
+    margin-left:20px;
+}
+
+ .btn{
+   margin-top: 3rem;
+   display: inline-block;
+    text-align: center;
+   font-size: 1.3rem;
+   border:.2rem solid rgba(122,60,60,0.87);
+   background-color: #2a1958;
+   color:white;
+   cursor: pointer;
+   letter-spacing: 1.5px;
+   text-transform: uppercase;
+   padding: 1.5rem 2.5rem !important;
+}
+
+.btn:hover{
+   background-color: rgba(122,60,60,0.2);
+   color: purple;
+   border:.2rem solid rgba(122,60,60,0.87);
+}
+
+.cart h2{
+    font-size: 1.2rem;
+    text-align: center;
+   /* color: rgba(122, 60, 60, 0.87);*/
+   color:#2a1958;
+}
+
+ .header h3{
+    margin-top: 30px;
+    margin-bottom: 40px;
+    color: #2a1958 !important;
+    font-size: 4rem;
+    letter-spacing: 7px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 10px purple;
+}
+
+
+.social div{
+    display: flex;
+    flex-direction: column !important;
+    justify-content: center;
+    margin-left: 30px;
+  }
+
+  @media screen and (max-width:990px){
+    .box1{
+        flex-direction: column;
+    }
+    .header h3{
+        font-size: 200%;
+    }
+  }
+  @media screen and (max-width:500px){
+    .cart{
+        padding: 0 !important;
+    }
+    .cart .box{
+        padding: 5px;
+        display:block;
+        margin: 0;
+    }
+  }

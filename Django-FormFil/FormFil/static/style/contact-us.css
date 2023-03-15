@@ -1,0 +1,256 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background: linear-gradient(rgba(244, 245, 243, 0.712), #7b378ec4);
+}
+
+/* main */
+.main {
+  position: relative;
+
+  width: 100%;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+
+}
+
+.main .navbar {
+  position: absolute;
+  height: 16%;
+  width: 99%;
+}
+  /* background-color: rgba(143, 135, 132, 0.274); */
+
+
+.main .navbar .logo {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  top: -25px;
+  left: 15%;
+  font-family: 'Lato', sans-serif;
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  cursor: pointer;
+  float: left;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.main .navbar ul {
+  position: relative;
+  height: 100%;
+  width: 50%;
+  color: black;
+  float: right;
+}
+
+.main .navbar ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.main .navbar ul .lgn {
+  border: 2px solid #041935;
+  padding: 6px 10px;
+  background-color: #2a1958;
+  color: #fff;
+}
+
+.main .navbar ul li a {
+  position: relative;
+  text-decoration: none;
+  display: block;
+  box-sizing: border-box;
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 35%);
+  color: black;
+  font-family: 'cinzel', sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 10px;
+  width: 100%;
+  height: auto;
+}
+
+.main .navbar ul li a:before {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 0;
+  background: #2a1958;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s ease-in-out width;
+}
+
+.main .navbar ul li a:hover:before,
+.main .navbar ul li a.active:before {
+  width: 100%;
+}
+
+.main .navbar ul li span {
+  padding: 2px;
+  font-size: 24px;
+  color: #fff;
+  font-weight: 200;
+}
+
+.img {
+  margin-left: 63%;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color:rgb(89, 174, 89);
+}
+
+
+
+
+
+/* _________________________________________________________________________ */
+
+
+* {
+  box-sizing: border-box;
+}
+
+.touch {
+  text-align: center;
+  text-transform: capitalize;
+  text-shadow: #f2f2f2;
+  text-decoration: double;
+  font-size: xx-large;
+}
+
+.con {
+  margin-top: 19%;
+}
+
+input[type=text],input[type=number], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid rgb(91, 91, 240);
+  border-radius: 5px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color:blueviolet;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+input[type=submit]:hover {
+  background-color: #b31d89;
+  
+}
+
+
+.hh {
+
+  margin-top: 5%;
+}
+
+.container {
+  margin-top: 0%;
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  padding: 10px;
+  margin-bottom: 50px;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+/* ............Footer ...............*/
+
+footer{
+  background-color: #33383c;
+  padding:70px 0px;
+}	       
+
+footer ul li{
+ padding:5px 0px;
+}
+
+.adress span , .contact span , .social span, .service span{
+color: #FFF; 
+font-weight: 800; 
+padding-bottom: 10px; 
+margin-bottom: 20px;
+display: block;
+text-transform: uppercase;
+font-size: 20px;
+letter-spacing: 3px;
+}
+
+.adress li p , .contact li a , .social li a, .service li a{
+ color:#FFF;
+ letter-spacing: 2px;
+ text-decoration:none;
+ font-size:15px;
+}
+
+.social li{
+ float:left;
+}
+
+.adress , .contact , .social , .service{
+ list-style: none;
+}
+
+.fa{
+ color:#9c9c9c;
+ margin-right: 15px;
+ font-size:14px;
+}
