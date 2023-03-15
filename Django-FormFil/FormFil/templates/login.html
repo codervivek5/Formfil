@@ -14,16 +14,7 @@
 <body>
     <div class="login-box">
         <h1>Login </h1>
-            {% if messages %}
-            <!-- <div>ksbv</div> -->
-            {% for message in messages %}
-            <b>
-                <div style="padding: 10px; position: absolute; color: red;" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>  
-            </b>
-            <br><br>    
-            {% endfor %}
-            {% endif %}
-            <form>
+        <form>
             <input type="email" class="input-box" placeholder="Full Name">
             <input type="number" class="input-box" placeholder="Enter your mobile number">
 
@@ -31,7 +22,6 @@
             <button type="button" class="verify-btn">Send OTP</button>
             <hr>
             <p class="or">OR</p>
-            <a href="/loginemail/"><button type="button" class="verify-btn">Login with email/password</button></a>
             <button type="button" class="twitter-btn">Login with Google <i class="fa fa-google" aria-hidden="true"></i></button>
             <p>Do not have an account ?<a href="/signup/">Sign Up</a></p>
         </form>
