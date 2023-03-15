@@ -14,6 +14,31 @@ def loginpage(request):
     # return HttpResponse("this is home page")
     return render(request, "login.html")
 
+def userdashboard(request):
+    if request.user.is_authenticated:
+       return render(request,"user_dashboard.html")
+    messages.info(request,"Please login first")
+    return redirect('loginpage')
+
+def logout1(request):
+    logout(request)
+    messages.info(request,'Successfully logged out!')
+    return redirect('loginpage')
+
+def loginemail(request):
+    if request.method=="POST":
+        email    = request.POST['email']
+        password :str    =  request.POST['password']
+        
+        username = User.objects.get(email=email.lower()).username
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            print("correct")
+            login(request,user)
+            return render(request,"user_dashboard.html")
+
+    return render(request, "loginemail.html")
+
 User = get_user_model()
 def signup(request):
     if request.method=="POST":
