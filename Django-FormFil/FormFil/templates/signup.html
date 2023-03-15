@@ -12,7 +12,6 @@
 </head>
 
 <body>
-   
     <div class="signup-box">
         <h1>Sign Up</h1>
         <h4>Get started with your account</h4>
@@ -34,14 +33,6 @@
           <input type="cnfpassword" id="cnfpassword" name="cnfpassword" placeholder="Confirm Password" required>
 
             <input type="submit" onclick="signup();" value="Submit">
-            {% if messages %}
-            <!-- <div>ksbv</div> -->
-            {% for message in messages %}
-            <b>
-                <div style="padding: 10px; position: absolute; color: red;" {% if message.tags %} class="{{ message.tags }}"{% endif %}>{{ message }}</div>  
-            </b>
-            {% endfor %}
-            {% endif %}
         </form>
         <p>By Clicking on Submit button, you agree to our<br>
             <a href="#">Terms and Conditions</a> and <a href="#">privacy policy</a>
