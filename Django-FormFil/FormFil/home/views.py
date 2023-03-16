@@ -24,15 +24,21 @@ def signup(request):
         cnfpassword :str    =  request.POST['cnfpassword']
 
         if password != cnfpassword:
-                messages.error(request, ' Sorry! Password does not match')
+                messages.info(request, ' Sorry! Password does not match')
                 return redirect('/signup/')
 
         if User.objects.filter(email=email).exists():
-                    messages.error(request, ' Sorry! Username is already taken')
+                    messages.info(request, ' Sorry! Email is already registered')
+                    print("sorry")
+                    return redirect('/signup/')
+        if User.objects.filter(username=fname+lname).exists():
+                    messages.info(request, ' Sorry! Username is already registered')
+                    print("sorry")
                     return redirect('/signup/')
         
         myuser = User.objects.create_user(fname+lname, email,password,first_name=fname, last_name=lname)
         myuser.save
+        messages.info(request, ' Successfully registered! ')
     return render(request, "signup.html")
 
 def contactus(request):
