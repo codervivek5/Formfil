@@ -64,7 +64,7 @@ def signup(request):
                     print("sorry")
                     return redirect('/signup/')
         
-        myuser = User.objects.create_user(fname+lname, email,password,first_name=fname, last_name=lname)
+        myuser = User.objects.create_user(uname, email,password,first_name=fname, last_name=lname)
         myuser.save
         messages.info(request, ' Successfully registered! ')
     return render(request, "signup.html")
