@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+body{
+    background: linear-gradient(rgba(244, 245, 243, 0.712),rgba(148,0,211,0.6)) !important;
+
+}
+
+.containerf { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+  margin-top: 110px;
+  margin-bottom: 80px;
+  } 
+
+  h1 { 
+    text-align: center; 
+    font-size: 36px; 
+    margin-bottom: 70px !important; 
+    color: #2a1958;
+    text-shadow: 2px 2px 10px purple;
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif !important;
+  } 
+
+  .question { 
+    font-size: 20px;
+    margin-top: 40px; 
+    margin-bottom: 30px; 
+    cursor: pointer; 
+    color: black !important;
+
+  } 
+  .question:after {
+  content: '\02795';
+  /* Unicode character for "plus" sign (+) */
+  font-size: 20px;
+  color: #777;
+  float: right;
+  margin-left: 80px;
+  margin-bottom: 20px;
+  }
+  hr{
+  margin-top: 50px;
+  border-top: 4px solid darkblue !important;
+
+  }
+
+  .answer { 
+    margin-bottom: 20px; 
+    display: none; 
+    font-size: 16px;
+    color: maroon;
+    letter-spacing: 1.5px;
+  } 
+
+  .answer p { 
+    margin: 0; 
+    line-height: 1.5; 
+  } 
+
+  .answer.active { 
+    display: block; 
+  } 
