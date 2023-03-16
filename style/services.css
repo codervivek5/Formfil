@@ -30,7 +30,7 @@
     width: 90%;
     height: 100%;
     padding: 1.5em 1.5em;
-    background: linear-gradient(#ffffff 50%, #2a1958 50%);
+    background: linear-gradient(var(--color--customnav) 50%, #2a1958 50%);
     background-size: 100% 200%;
     background-position: 0 2.5%;
     border-radius: 5px;
