@@ -14,9 +14,37 @@ def loginpage(request):
     # return HttpResponse("this is home page")
     return render(request, "login.html")
 
+def userdashboard(request):
+    if request.user.is_authenticated:
+       return render(request,"user_dashboard.html")
+    messages.info(request,"Please login first")
+    return redirect('loginpage')
+
+def logout1(request):
+    logout(request)
+    messages.info(request,'Successfully logged out!')
+    return redirect('loginpage')
+
+def loginemail(request):
+    if request.method=="POST":
+        email    = request.POST['email']
+        password :str    =  request.POST['password']
+        
+        username = User.objects.get(email=email.lower()).username
+        user = authenticate(username=username, password=password)
+        if user is not None:
+            print("correct")
+            login(request,user)
+            return render(request,"user_dashboard.html")
+        else:
+            messages.info(request,"Invalid credentials!")
+
+    return render(request, "loginemail.html")
+
 User = get_user_model()
 def signup(request):
     if request.method=="POST":
+        uname :str    =  request.POST['uname']
         fname :str    =  request.POST['fname']
         lname :str    =  request.POST['lname']
         email    = request.POST['email']
@@ -31,12 +59,12 @@ def signup(request):
                     messages.info(request, ' Sorry! Email is already registered')
                     print("sorry")
                     return redirect('/signup/')
-        if User.objects.filter(username=fname+lname).exists():
+        if User.objects.filter(username=uname).exists():
                     messages.info(request, ' Sorry! Username is already registered')
                     print("sorry")
                     return redirect('/signup/')
         
-        myuser = User.objects.create_user(fname+lname, email,password,first_name=fname, last_name=lname)
+        myuser = User.objects.create_user(uname, email,password,first_name=fname, last_name=lname)
         myuser.save
         messages.info(request, ' Successfully registered! ')
     return render(request, "signup.html")
