@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="../img/crop_logo.png" />
     <link rel="stylesheet" href="../style/user_dashboard.css">
+    <link rel="stylesheet" href="../style/translate.css" />
 </head>
 <body>
     <div class="sidebar">
@@ -41,7 +42,21 @@
                     <a href="../pages/contact-us.html"><span class="las la-phone"></span>
                     <span>CONTACT US</span></a>
                 </li>
+                <li><div id="google_translate_element"></div></li>
             </ul>
+            <script src="scripts/translate.js"></script>
+  
+                <script type="text/javascript">
+                    function googleTranslateElementInit() {
+                        new google.translate.TranslateElement(
+                            {pageLanguage: 'en'},
+                            'google_translate_element'
+                        );
+                    }
+                </script>
+  
+                <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+                </script>
         </div>
     </div>
 

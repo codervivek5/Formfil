@@ -1,9 +1,9 @@
 :root{
-    --color--main: linear-gradient(#470057,rgba(43, 4, 61, 0.712)); 
-	--color--footer: rgb(65, 3, 55);
-	--color--h1: rgb(255, 255, 255);
-	--color--h2: rgb(233, 233, 233);
-	--color--p: white;
+    --color--main: linear-gradient(#d02eb0e7,rgba(230, 24, 161, 0.79)); 
+	--color--footer: rgb(201, 235, 32);
+	--color--h1: rgb(168, 38, 38);
+	--color--h2: rgba(82, 10, 10, 0.956);
+	--color--p: rgba(168, 7, 7, 0.549);
 	--color--btn: #130735;
 	--color--nav: rgb(215, 244, 248);
 	--color--nav_before:rgb(215, 244, 248);

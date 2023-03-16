@@ -9,6 +9,7 @@
     <link rel="icon" type="image/x-icon" href="../img/crop_logo.png" />
     <link rel="stylesheet" href="../style/style.css" />
     <link rel="stylesheet" href="../style/theme.css" />
+    <link rel="stylesheet" href="../style/translate.css" />
     <link
     rel="stylesheet"
     href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
@@ -45,7 +46,21 @@
               <a href="../pages/testimonial.html" class="nav-link">TESTIMONIAL</a>
             </li>
             <li><a href="../pages/cart.html" class="nav-link active">CART</a></li>
+            <li><div id="google_translate_element"></div></li>
           </ul>
+          <script src="../scripts/translate.js"></script>
+
+          <script type="text/javascript">
+              function googleTranslateElementInit() {
+                  new google.translate.TranslateElement(
+                      {pageLanguage: 'en'},
+                      'google_translate_element'
+                  );
+              }
+          </script>
+
+          <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+          </script>
         </div>
   
         <div class="fixed-buttons">
