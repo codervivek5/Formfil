@@ -1,4 +1,5 @@
 
+<link rel="stylesheet" href="../style/translate.css" />
 <div class="navbar">
 	<a href="index.html"><img class="logo" src="logo.png" /></a>
 	<ul>
@@ -16,8 +17,22 @@
 		<li><a href="pages/login.html" class="lgn">LOGIN</a></li>
 		<li><a href="pages/signup.html" class="lgn">SIGN UP</a></li>
 		<li><a href="../pages/project.html">Cart </a></li>
+		<li><div id="google_translate_element"></div></li>
         <img src="../img/moon.png" id="icon">
 
 	</ul>
+	<script src="scripts/translate.js"></script>
+
+		<script type="text/javascript">
+			function googleTranslateElementInit() {
+				new google.translate.TranslateElement(
+					{pageLanguage: 'en'},
+					'google_translate_element'
+				);
+			}
+		</script>
+
+		<script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+		</script>
 	<script src="../darkmode.js"></script>
 </div>

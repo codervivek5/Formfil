@@ -20,6 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" type="image/x-icon" href="../img/crop_logo.png" />
+    <link rel="stylesheet" href="../style/translate.css" />
 </head>
 
 <body>
@@ -45,7 +46,21 @@
                   <a href="../pages/testimonial.html" class="nav-link active">TESTIMONIAL</a>
                 </li>
                 <li><a href="../pages/cart.html" class="nav-link">CART</a></li>
+                <li><div id="google_translate_element"></div></li>
               </ul>
+              <script src="scripts/translate.js"></script>
+
+              <script type="text/javascript">
+                  function googleTranslateElementInit() {
+                      new google.translate.TranslateElement(
+                          {pageLanguage: 'en'},
+                          'google_translate_element'
+                      );
+                  }
+              </script>
+
+              <script type="text/javascript" src= "https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+              </script>
       
               <div class="fixed-buttons">
                 <button><a href="../pages/login.html" class="lgn">LOGIN</a></button>
