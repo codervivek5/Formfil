@@ -13,7 +13,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong" />
   <link rel="icon" type="image/x-icon" href="../img/crop_logo.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
   <link rel="stylesheet" media="screen and (max-width: 1230px)" href="../style/contact-us-handset.css">
 
 </head>
@@ -75,14 +76,19 @@
           <div id="error"></div>
           <form name="myForm" action="https://formsubmit.co/kecayay846@huvacliq.com" method="POST">
             <label for="fname">Full Name</label>
-            <input type="text" id="fname" name="fname" placeholder="Your name" oninput="checkname();" required>
+            <i class="fa-solid fa-user"></i>
+            <input type="text" id="fname" name="fname" placeholder=
+            "Your name" oninput="checkname();" required>
             <label for="email">Email</label>
+            <i class="fa-solid fa-envelope"></i>
             <input type="text" id="email" name="email" placeholder="Your email" oninput="checkemail();" required>
             <label for="contact">Mobile Number</label>
+            <i class="fa-solid fa-phone"></i>
             <input type="number" id="contact" name="contact" placeholder="Your number" oninput="checkcontact();"
               required>
 
             <label for="country">Country</label>
+            <i class="fa-solid fa-globe"></i>
             <select id="country" name="country">
               <option value="India">India</option>
               <option value="Ukrain">Bangladesh</option>
@@ -95,6 +101,7 @@
               <option value="Ukrain">Other</option>
             </select>
             <label for="subject">Subject</label>
+            <i class="fa-solid fa-pen"></i>
             <textarea id="subject" name="subject" placeholder="Write your thoughts" style="height:160px"></textarea>
             <div id="button">
               <input type="submit" value="Submit" id="submitdetails">
