@@ -2,6 +2,25 @@
 <h1>Formfil.in</h1>
 </div>
 
+<div align="center">
+ <p>
+
+![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge)
+![Visitors](https://api.visitorbadge.io/api/visitors?path=codervivek5%2FFormfil%20&countColor=%23263759&style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/codervivek5/Formfil?style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/codervivek5/Formfil?style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/codervivek5/Formfil?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/codervivek5/Formfil?style=for-the-badge)
+![GitHub repo size](https://img.shields.io/github/repo-size/codervivek5/Formfil?style=for-the-badge)
+![Github](https://img.shields.io/github/license/codervivek5/Formfil?style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/codervivek5/Formfil?style=for-the-badge)
+![GitHub closed issues](https://img.shields.io/github/issues-closed-raw/codervivek5/Formfil?style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/codervivek5/Formfil?style=for-the-badge)
+![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/codervivek5/Formfil?style=for-the-badge)
+  
+ </p>
+ </div>
+
 ## 👋 Welcome
 - This site is specifically designed for cyber cafes to manage their operations and provide services to their customers. 
 - Whether you're running a small internet cafe or a large gaming center, this site has everything you need to streamline your business and offer an exceptional experience to your customers. 
