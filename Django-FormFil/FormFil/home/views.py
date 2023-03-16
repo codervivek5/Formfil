@@ -44,6 +44,7 @@ def loginemail(request):
 User = get_user_model()
 def signup(request):
     if request.method=="POST":
+        uname :str    =  request.POST['uname']
         fname :str    =  request.POST['fname']
         lname :str    =  request.POST['lname']
         email    = request.POST['email']
@@ -58,7 +59,7 @@ def signup(request):
                     messages.info(request, ' Sorry! Email is already registered')
                     print("sorry")
                     return redirect('/signup/')
-        if User.objects.filter(username=fname+lname).exists():
+        if User.objects.filter(username=uname).exists():
                     messages.info(request, ' Sorry! Username is already registered')
                     print("sorry")
                     return redirect('/signup/')

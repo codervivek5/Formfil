@@ -17,14 +17,17 @@
         <h1>Sign Up</h1>
         <h4>Get started with your account</h4>
         <form action='/signup/'  method="POST"> {% csrf_token %}
+            <label for="uname">Username</label>
+          <input type="text" id="uname" name="uname" placeholder="Create unique username" required>
+
             <label for="fname">First Name</label>
-          <input type="text" id="fname" name="fname" placeholder="Your first name" required>
+          <input type="text" id="fname" name="fname" placeholder="Your first name" oninput="checkname();" required>
 
           <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lname" placeholder="Your last name" required>
+          <input type="text" id="lname" name="lname" placeholder="Your last name" oninput="checkname();" required>
 
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" placeholder="Your E-mail" required>
+          <input type="email" id="email" name="email" placeholder="Your E-mail" oninput="checkemail();" required>
 
           <label for="password">Password</label>
           <input type="password" id="password" name="password" placeholder="Password" required>
@@ -46,8 +49,49 @@
         <p>By Clicking on Submit button, you agree to our<br>
             <a href="#">Terms and Conditions</a> and <a href="#">privacy policy</a>
         </p>
+        <br>
     </div>
     <p class="already">Already have an account?<a href="/login/">Login here</a> </p>
 </body>
+
+
+<script>  
+    function checkname(){
+      var name_in = document.querySelector("#fname")
+      console.log(name_in.value)
+      if(name_in.value.length>10)
+      {
+        name_in.setCustomValidity("Name is too long!")
+      }
+      else
+      {
+        name_in.setCustomValidity("")
+      }
+    }
+    function checkemail(){
+      var em = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      var email_in = document.querySelector("#email");
+      if(!(email_in.value.match(em)))
+      {
+        email_in.setCustomValidity("Email is invalid!");
+      }
+      else
+      {
+        email_in.setCustomValidity("");
+      }
+    }
+    function checkcontact(){
+      var phoneno = /^\d{10}$/;
+      var contact_in = document.querySelector("#contact");
+      if(!(contact_in.value.match(phoneno)))
+      {
+        contact_in.setCustomValidity("Phone Number is invalid!");
+      }
+      else
+      {
+        contact_in.setCustomValidity("");
+      }
+    }
+</script>
 
 </html>
