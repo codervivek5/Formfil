@@ -4,6 +4,8 @@ from django.contrib import messages
 from home.models import contactdetails
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth import get_user_model
+from django.core.files.storage import default_storage
+import os
 # Create your views here.
 
 def index(request):
@@ -34,8 +36,9 @@ def loginemail(request):
         user = authenticate(username=username, password=password)
         if user is not None:
             print("correct")
+            post=User.objects.get(username=username)
             login(request,user)
-            return render(request,"user_dashboard.html")
+            return render(request,"user_dashboard.html",{'posts':post})
         else:
             messages.info(request,"Invalid credentials!")
 
@@ -64,8 +67,24 @@ def signup(request):
                     print("sorry")
                     return redirect('/signup/')
         
+        
+        
         myuser = User.objects.create_user(uname, email,password,first_name=fname, last_name=lname)
-        myuser.save
+        print(request)
+        if len(request.FILES)==0:
+            messages.info(request, 'Please insert an image')
+            return redirect('/signup/') 
+    
+        #  Saving POST'ed file to storage
+        file = request.FILES['image']
+        file_name = default_storage.save(file.name, file)
+         
+        #  Reading file from storage
+        file = default_storage.open(file_name)
+        file_url = str(os.getcwd()+str(default_storage.url(file_name)))
+        print(file_url)
+        myuser.image=file
+        myuser.save()
         messages.info(request, ' Successfully registered! ')
     return render(request, "signup.html")
 

@@ -64,10 +64,10 @@
             </div>
 
             <div class="user-wrapper">
-                <img src="#" alt="profile_photo" width="30px" height="30px">
+                <img src="{{posts.image.url}}" alt="profile_photo" width="30px" height="30px">
                 <div>
-                    <h4>USERNAME</h4>
-                    <small>EMAIL</small>
+                    <h4>{{posts.username}}</h4>
+                    <small>{{posts.email}}</small>
                 </div>
             </div>
         </header>
@@ -76,7 +76,7 @@
             <div class="cards">
                 <div class="card-1">
                     <div class="wlcm">
-                        <h1>Good Morning, User</h1>
+                        <h1>Good Morning, {{posts.first_name}}</h1>
                         <h3>Your all activity is here...</h3>
                     </div>
 

@@ -14,6 +14,8 @@ from django.contrib.auth.models import AbstractUser
     # LastName=models.TextField('lname',default='',blank=True)
     
     
+class User(AbstractUser):
+     image=models.ImageField('image',upload_to='',null=True,blank=True)
 
 class contactdetails(models.Model):
     name = models.TextField('name',max_length=200)

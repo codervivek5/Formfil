@@ -6,3 +6,6 @@ admin.site.register(contactdetails)
 
 # from .models import User
 # admin.site.register(User)
+
+from .models import User
+admin.site.register(User)
