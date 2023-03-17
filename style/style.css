@@ -333,7 +333,18 @@ footer ul li{
     opacity: 60%;
   }
 
+.text-uppercase{
+    color: white;
+    font-size: 22;
+    font-weight: bold;
+}
+#footer-aboutus{
+    color: rgb(225, 214, 214);
+}
 
+.footer-4 p{
+    color: rgb(102, 127, 241);
+}
 
 
   
